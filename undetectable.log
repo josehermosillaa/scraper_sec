@@ -1,0 +1,105 @@
+2026-08-04 10:08:54 [INFO] START | proxy=True rotate_every=10 max_rows=10
+2026-08-04 10:08:54 [DEBUG] Using selector: EpollSelector
+2026-08-04 10:08:54 [INFO] Browser launching with proxy: http://p.webshare.io:80
+2026-08-04 10:08:57 [INFO] Initial IP: unknown
+2026-08-04 10:09:03 [INFO] Research warmup started (120s)
+2026-08-04 10:11:04 [INFO] Research warmup done
+2026-08-04 10:11:04 [WARNING] _abck POISONED: 4D3EFC723CFCAC3F3F9232AC1DD49840~0~YAAQz+0nFwhNrrCfAQAAisMczRAzgZmJH+/n/PMsopUGQ...
+2026-08-04 10:11:04 [INFO] Initial _abck: POISONED (4D3EFC723CFCAC3F3F9232AC1DD49840~0~YAAQz+0nFwhNrrCfAQAAisMcz...)
+2026-08-04 10:11:05 [INFO] Processing BIN=4624658 job=Q00848877-I1
+2026-08-04 10:11:08 [DEBUG] api_search_bin BIN=4624658
+2026-08-04 10:11:08 [WARNING] api_search_bin BIN=4624658 FAIL: AKAMAI_BLOCKED
+2026-08-04 10:11:40 [INFO] Rotation recovery attempt 1
+2026-08-04 10:11:40 [DEBUG] Using selector: EpollSelector
+2026-08-04 10:11:40 [INFO] Browser launching with proxy: http://p.webshare.io:80
+2026-08-04 10:11:55 [INFO] Recovery new IP: unknown
+2026-08-04 10:12:03 [INFO] Research warmup started (20s)
+2026-08-04 10:12:24 [INFO] Research warmup done
+2026-08-04 10:12:24 [WARNING] _abck POISONED: 4D3EFC723CFCAC3F3F9232AC1DD49840~0~YAAQxwwDFw8Wia+fAQAAT0MezRDO4XYIhDIi08joNeD6V...
+2026-08-04 10:12:24 [WARNING] Recovery: _abck still poisoned on new IP
+2026-08-04 10:12:25 [INFO] Processing BIN=3331440 job=B00738255-P1
+2026-08-04 10:12:30 [DEBUG] api_search_bin BIN=3331440
+2026-08-04 10:12:33 [WARNING] api_search_bin BIN=3331440 FAIL: Event loop is closed! Is Playwright already stopped?
+2026-08-04 10:12:33 [INFO] Processing BIN=1037605 job=M01110102-I1
+2026-08-04 10:12:39 [DEBUG] api_search_bin BIN=1037605
+2026-08-04 10:12:42 [WARNING] api_search_bin BIN=1037605 FAIL: Event loop is closed! Is Playwright already stopped?
+2026-08-04 10:12:42 [INFO] Processing BIN=2012957 job=X01130339-P5
+2026-08-04 10:12:49 [DEBUG] api_search_bin BIN=2012957
+2026-08-04 10:12:52 [WARNING] api_search_bin BIN=2012957 FAIL: Event loop is closed! Is Playwright already stopped?
+2026-08-04 10:12:52 [INFO] Processing BIN=2063767 job=X01052403-I1
+2026-08-04 10:12:56 [DEBUG] api_search_bin BIN=2063767
+2026-08-04 10:12:59 [WARNING] api_search_bin BIN=2063767 FAIL: Event loop is closed! Is Playwright already stopped?
+2026-08-04 10:40:38 [INFO] START | proxy=True rotate_every=10 max_rows=10
+2026-08-04 10:40:38 [DEBUG] Using selector: EpollSelector
+2026-08-04 10:40:38 [INFO] Browser launching with proxy: http://p.webshare.io:80
+2026-08-04 10:40:41 [INFO] Initial IP: unknown
+2026-08-04 10:40:47 [INFO] Research warmup started (120s)
+2026-08-04 10:42:47 [INFO] Research warmup done
+2026-08-04 10:42:47 [WARNING] _abck POISONED: ~-1 found | full=4D3EFC723CFCAC3F3F9232AC1DD49840~0~YAAQ0mI0F2Nxwa6fAQAArgE6zRAZBgEqLxgXeduNUrScK2+9F0k9ZQd8Vr63y3eCJKIZo6FLh9fMnHYRyAjPG5tt3/vd3lmMUWOzNqSYsPM9KXNCi/ccgT672/AsppMdQ3aeXW/bP1SKFQ+g0z9IYoXSDamztKUir+/Ecj0Olilnwwjxal0yltLisrq7KJgGbk5prPy16wv//IharM6tHXuImMvqZJANe9qYCvI2ovRqBz7a9PT/WWhwv8eV3KUgKV/d4JwN4V/YFmakw5RcZTttCo/puLnkC7wsmOgsIFSY0CsgHJC4Xyp6Up3ogpkm5x8hcUfThLsDSzsOr8Lc6NT+reRpshs5X0fPzTpxXDon+jS2M8uOoFwNuPgAvpdv9JswsifXsBnHC/jHt+B6pFnu6fMhHZ2Vq8kyG9rIWUSZW6bXFuevgJTlkaZZJptJMVd3T25uXN1BFIkOKnbPRO0J0icv9YQ+8OsfpSegCMGl6Yl/WltKK7a+UbjLqwEbAybfH1X5qby2ZEHeScihUTT9RhZPmguWr2gdnv8liJpyacFGHzyZxBdcP3snUXsKNJEh6MiBhfs9y9kPAukV2hbhLfU3ENAvyDrcGQ350Hjld1ZeNcLsM81Eixcguvwj7m7U+vSR05goT4EqB7uv6mF+cIM+FVbE9x15KIcAs49ZgqBgEcExRMoHBRTMXuDv0/jXZQvJTgwZGfpP2Q7qU6w7icFoQBvCwrEqpGEZEYfTol+9xCoVZ85YjTYsjVuGsvmij30AFinst3uhEJNqqNv1qqbgaqiH6aoMGQRhAG72osYKzOwo2w5hy+knA9QYWwMx2CMbRBUFujZbiWfccJHIOpjatwiGnwlGEh2zF33HPTmoIWCtTOimzoKe5usX4EPSJi+WlDF//MEi940W5mNUw2egRbRzs26qk1C69fTYIK0m6m/AZ91b+JLM9BCUbtE4rmMbTP9e9yMAp10FwsHZbEMUxRhr/YvKkABnbXDAy2ycwDw+khjR3gvWfJvnPkHvpGPhrsPXj6ULFN6n276tLnsml7fxXUa6nfQ4j6vvbUclbGStqefhduj4IkbCrk/5mzZ1/dx+AArZnwFLrVBdViQbj/hDecI4P8Z8x25UbpmhdRc3P+AI0TOgGS/5AM41o9CAsu05Vr4nhNmnW2C/g3GD9wA3ajO0GiFMy0BV+t4CIC1EhEXGjS+bcRCyo8Lvq2Yy5oqv91SMZ07IwvQq/J3qoC/qt2YqQtZgbRbfI3/B0eL1vlabpunIfbJxsltFE8+unBup~-1~-1~-1~AAQAAAAG%2f%2f%2f%2f%2f62eZbbWG0qiqSWUaQiac+700hzscO8CDUgFU9K+79SM6l%2fTFDeWmDHN6G4lYCTyECE0Wo%2fdyC84C41AetgriqUaV%2fEJSW+a1YizF1VdEq7ELrYssn4RmFNf1zTTM9En90mNbszqoTqN9kqfiCWU8m8+nY2eX1FrqjCgdEWXaA%3d%3d~-1
+2026-08-04 10:42:47 [INFO] Initial _abck: POISONED (full=4D3EFC723CFCAC3F3F9232AC1DD49840~0~YAAQ0mI0F2Nxwa6fAQAArgE6zRAZBgEqLxgXeduNUrScK2+9F0k9ZQd8Vr63y3eCJKIZo6FLh9fMnHYRyAjPG5tt3/vd3lmMUWOzNqSYsPM9KXNCi/ccgT672/AsppMdQ3aeXW/bP1SKFQ+g0z9IYoXSDamztKUir+/Ecj0Olilnwwjxal0yltLisrq7KJgGbk5prPy16wv//IharM6tHXuImMvqZJANe9qYCvI2ovRqBz7a9PT/WWhwv8eV3KUgKV/d4JwN4V/YFmakw5RcZTttCo/puLnkC7wsmOgsIFSY0CsgHJC4Xyp6Up3ogpkm5x8hcUfThLsDSzsOr8Lc6NT+reRpshs5X0fPzTpxXDon+jS2M8uOoFwNuPgAvpdv9JswsifXsBnHC/jHt+B6pFnu6fMhHZ2Vq8kyG9rIWUSZW6bXFuevgJTlkaZZJptJMVd3T25uXN1BFIkOKnbPRO0J0icv9YQ+8OsfpSegCMGl6Yl/WltKK7a+UbjLqwEbAybfH1X5qby2ZEHeScihUTT9RhZPmguWr2gdnv8liJpyacFGHzyZxBdcP3snUXsKNJEh6MiBhfs9y9kPAukV2hbhLfU3ENAvyDrcGQ350Hjld1ZeNcLsM81Eixcguvwj7m7U+vSR05goT4EqB7uv6mF+cIM+FVbE9x15KIcAs49ZgqBgEcExRMoHBRTMXuDv0/jXZQvJTgwZGfpP2Q7qU6w7icFoQBvCwrEqpGEZEYfTol+9xCoVZ85YjTYsjVuGsvmij30AFinst3uhEJNqqNv1qqbgaqiH6aoMGQRhAG72osYKzOwo2w5hy+knA9QYWwMx2CMbRBUFujZbiWfccJHIOpjatwiGnwlGEh2zF33HPTmoIWCtTOimzoKe5usX4EPSJi+WlDF//MEi940W5mNUw2egRbRzs26qk1C69fTYIK0m6m/AZ91b+JLM9BCUbtE4rmMbTP9e9yMAp10FwsHZbEMUxRhr/YvKkABnbXDAy2ycwDw+khjR3gvWfJvnPkHvpGPhrsPXj6ULFN6n276tLnsml7fxXUa6nfQ4j6vvbUclbGStqefhduj4IkbCrk/5mzZ1/dx+AArZnwFLrVBdViQbj/hDecI4P8Z8x25UbpmhdRc3P+AI0TOgGS/5AM41o9CAsu05Vr4nhNmnW2C/g3GD9wA3ajO0GiFMy0BV+t4CIC1EhEXGjS+bcRCyo8Lvq2Yy5oqv91SMZ07IwvQq/J3qoC/qt2YqQtZgbRbfI3/B0eL1vlabpunIfbJxsltFE8+unBup~-1~-1~-1~AAQAAAAG%2f%2f%2f%2f%2f62eZbbWG0qiqSWUaQiac+700hzscO8CDUgFU9K+79SM6l%2fTFDeWmDHN6G4lYCTyECE0Wo%2fdyC84C41AetgriqUaV%2fEJSW+a1YizF1VdEq7ELrYssn4RmFNf1zTTM9En90mNbszqoTqN9kqfiCWU8m8+nY2eX1FrqjCgdEWXaA%3d%3d~-1)
+2026-08-04 10:42:47 [WARNING] _abck poisoned at startup, pre-emptive rotation
+2026-08-04 10:43:18 [INFO] Rotation recovery attempt 1
+2026-08-04 10:43:18 [DEBUG] Using selector: EpollSelector
+2026-08-04 10:43:19 [INFO] Browser launching with proxy: http://p.webshare.io:80
+2026-08-04 10:44:21 [INFO] Recovery new IP: 69.133.25.39 (prev=unknown)
+2026-08-04 10:44:28 [INFO] Research warmup started (20s)
+2026-08-04 10:44:49 [INFO] Research warmup done
+2026-08-04 10:44:49 [WARNING] _abck POISONED: ~-1 found | full=4D3EFC723CFCAC3F3F9232AC1DD49840~0~YAAQ0mI0F6eqwa6fAQAASPQ7zRD8lNLQf0WVacHph8oQTIAsGVHz5F2wm4xfB+3qk6FdSHw2WlE79LUqP9Cp1H7fBsSwHDXKEUjt9YtRuIvPrs9DHbYTWbi0MjgE2kdrhNPhHso5XgUf1/JcHOh6tAUSAPR0nLVnKlWwEGnQckAUuNyg0gLwZ08UdeHBr2H1Ksrt3nS29mXCupi4XhHL+7+2FELcIwDuoy+TrpgpyK/YiOkjJC3plQfI2fTa2L3Q0KJtKAS+heXbIDAX6eqPkRuk6UgwXDRtLdVWmb72PvybczJMfN+V19MEg4yo9+QDS2o5GEmZdiNUWQAggvEAU2m6Y9h+J4JGuL9jObaX+p1IUjrWNvjqbesqjnTSNg5xGqbFbbqJ6kF0y/C6hiCeJ1YpX7ZIj/+3qPrd4Xh1iZtKZ59TsjfZTgxzuVgZphuytmNcU/kX408oKSOv2f/v90SXRkGMFVgZyFDTdDWsE/L611gkrNCzw9flcgSIU+ED/ZRX46Hv1uHrtNDl0P5JX3dGU6BXcvNEc8ghZLifg7YKjPldV55yzjDpFdhPlXb35CGJGn/O1NENPCo7NYsbayaRhfYamxNXX/LC4vhEgR16lC7lExPu4AhI6pMhp42g89SmvHQX9v4RVNfppYikw9ZDQ+ojG+zCx5lmrr+iNCHXe/FkZ4/FN1PM1IWRbX7ePXnKB0bn0JiPTh9xiR31mKftpERmYfwHIFxuj8EWRlmYq5dFhtlvT4HS4sIefU9di/cbYdjeloRQ6iezTd8/G8akoEijZV+tiEuI5FgB2I1B4m8CBK5EHmjNg/vr4CEaFTBmB64dj2KCWLfVRwW2E8tClbRxSoMDbNQMpL78WSjnpU9d8ufe+kFg163z8HpdDQC5foQwmw2dMLLp/JNYlB/NYzskgNgqUIvKMCeHqWWlJ6LMl6kRDKvB7Uy7vZ0Pz43qJGjSGfi/qtIi6gahX7VxXNMz1dkP+p1tVtki02pE1nqSMILn0bsLJ5GBkqEq9SpcY+NfX3t/PbgJW8TrFiKfnqOBUR2Jrp7WnAiPmWYgaQl+Mdzuwv2D9ac+pon8JUUhGwGrhPdfG/URnxFhVEv4B11/zWwhSX8BOdp7AGRHu0CInDMpRv/SunfWnxPO4kbewws1xtG6UcMaJf+My0blSaFq9ooDV+eA9RZ7in7vgT0tqpdO09ev4dRXGNR+K8bym92xIBbs5rfR8GaQBvr2uuL2wAfULNkk0Uy5xjSkDCL2DK9DYWlU+N5rhXRevA7iQ7xOZujs~-1~-1~-1~AAQAAAAG%2f%2f%2f%2f%2f7XFF9cHsKtM4cAMieFcPRzeAKCEY4Pnm+XilB%2fnY3Bf+fJE2FsZihEe1r2nhDu+AoeXO%2fZ1iouLFV4di4i6+k3wG9t1K3GuBDDptrMzZn93bampn6RshIi1VxU6j9GLgzyCanddqlkkRAG6NBrvo3hw4C+hDlnmki6lcQSICg%3d%3d~-1
+2026-08-04 10:44:49 [WARNING] Recovery: _abck still poisoned on new IP
+2026-08-04 10:44:50 [WARNING] Pre-emptive rotation failed, continuing anyway
+2026-08-04 10:44:50 [INFO] Processing BIN=4624658 job=Q00848877-I1
+2026-08-04 10:44:56 [DEBUG] api_search_bin BIN=4624658
+2026-08-04 10:44:59 [WARNING] api_search_bin BIN=4624658 FAIL: Event loop is closed! Is Playwright already stopped?
+2026-08-04 10:44:59 [INFO] Processing BIN=3331440 job=B00738255-P1
+2026-08-04 10:45:03 [DEBUG] api_search_bin BIN=3331440
+2026-08-04 10:45:06 [WARNING] api_search_bin BIN=3331440 FAIL: Event loop is closed! Is Playwright already stopped?
+2026-08-04 10:45:06 [INFO] Processing BIN=1037605 job=M01110102-I1
+2026-08-04 10:45:09 [DEBUG] api_search_bin BIN=1037605
+2026-08-04 10:45:12 [WARNING] api_search_bin BIN=1037605 FAIL: Event loop is closed! Is Playwright already stopped?
+2026-08-04 10:45:12 [INFO] Processing BIN=2012957 job=X01130339-P5
+2026-08-04 10:45:16 [DEBUG] api_search_bin BIN=2012957
+2026-08-04 10:45:19 [WARNING] api_search_bin BIN=2012957 FAIL: Event loop is closed! Is Playwright already stopped?
+2026-08-04 10:45:19 [INFO] Processing BIN=2063767 job=X01052403-I1
+2026-08-04 10:45:31 [DEBUG] api_search_bin BIN=2063767
+2026-08-04 10:45:34 [WARNING] api_search_bin BIN=2063767 FAIL: Event loop is closed! Is Playwright already stopped?
+2026-08-04 10:49:03 [INFO] START | proxy=True rotate_every=10 max_rows=10
+2026-08-04 10:49:03 [DEBUG] User data dir: /tmp/undetectable_1785854943
+2026-08-04 10:49:03 [DEBUG] Using selector: EpollSelector
+2026-08-04 10:49:03 [INFO] Browser launching with proxy: http://p.webshare.io:80
+2026-08-04 10:49:10 [INFO] Initial IP: unknown
+2026-08-04 10:49:16 [INFO] Research warmup started (120s)
+2026-08-04 10:51:17 [INFO] Research warmup done
+2026-08-04 10:51:17 [WARNING] _abck POISONED: ~-1 found | full=061D3D262DC9542576BB3A6E4593E315~0~YAAQ22I0F3HcFq6fAQAA5+xBzRCpt5kHRGaSl2nYC1c/QsdBZtdpxrTIZyVOmlgSf1BXUiz1Yn2dYNQbe+p1werFGsqHRfeYpC4VzDg+JRJ2HgZcypnu8xrlbrNmlQcxDteuK1/+AXwdSr+4+6DtnJHzKzIA5im+YKA7INAy9Sb5q+hzsgA5rMczWZ+uVCo9WXcQeqLE+24ZjPKJpmA1M1CrvUDzYbSwEwyq+VSAbGcIqst+GZPJzQX4FvvC0jvQD2ETjgjgH22srpvuTwqqrLgJpfTsxH+eYBXznQGOSiPRIbGA7N9f8HYOY40aOiTe7r6YY4ef6KNzIwi1YnKYbLXJt8Iq3WEMrKTLQ4zJuu97yBj/ghzI6qxC9+Ej6dsQgKhtfyljcRM89Y7AfOEinXFRcS6bcsibsSnE48mFNGbXHrAvqx4eGD4AlwxQG3cqB8MsiPxCYMFJ2LdXDHuFpazrNB8YoODnQUAjS4EESy7hGFmemTCjSP36jreRE4iH0B5n9/zHU3nmpYHdU72zsJ/Jqw/u14lPypebKuL5jdEkcDaV3pZY0HmC/bL+SpcsXig9ThJWlzwrm5B/l/tVlDmPBYb5at54B9hw1se5GCJ/+FyDCPPw24MOal8UWPz0ycR4Hu9pLBoSD3TPNMmDriuM9rfuHrV+Ebz7mI42SPpQmfNecO1jMWPpxWOj1briE1bTDEJquSfOrN8=~-1~-1~-1~AAQAAAAG%2f%2f%2f%2f%2f6iKAlctq3g4qmailmkC9+JdwF68RkUyZCJfousprQ7meMKcegOGlJGPCmsJOq1kGSpLRmSjI821kDuhTGsFlDViRc6FYdEnGQmUge7GlbCD21WchMO49oALP5%2fDtofyl3AHktA%3d~-1
+2026-08-04 10:51:17 [INFO] Initial _abck: POISONED (full=061D3D262DC9542576BB3A6E4593E315~0~YAAQ22I0F3HcFq6fAQAA5+xBzRCpt5kHRGaSl2nYC1c/QsdBZtdpxrTIZyVOmlgSf1BXUiz1Yn2dYNQbe+p1werFGsqHRfeYpC4VzDg+JRJ2HgZcypnu8xrlbrNmlQcxDteuK1/+AXwdSr+4+6DtnJHzKzIA5im+YKA7INAy9Sb5q+hzsgA5rMczWZ+uVCo9WXcQeqLE+24ZjPKJpmA1M1CrvUDzYbSwEwyq+VSAbGcIqst+GZPJzQX4FvvC0jvQD2ETjgjgH22srpvuTwqqrLgJpfTsxH+eYBXznQGOSiPRIbGA7N9f8HYOY40aOiTe7r6YY4ef6KNzIwi1YnKYbLXJt8Iq3WEMrKTLQ4zJuu97yBj/ghzI6qxC9+Ej6dsQgKhtfyljcRM89Y7AfOEinXFRcS6bcsibsSnE48mFNGbXHrAvqx4eGD4AlwxQG3cqB8MsiPxCYMFJ2LdXDHuFpazrNB8YoODnQUAjS4EESy7hGFmemTCjSP36jreRE4iH0B5n9/zHU3nmpYHdU72zsJ/Jqw/u14lPypebKuL5jdEkcDaV3pZY0HmC/bL+SpcsXig9ThJWlzwrm5B/l/tVlDmPBYb5at54B9hw1se5GCJ/+FyDCPPw24MOal8UWPz0ycR4Hu9pLBoSD3TPNMmDriuM9rfuHrV+Ebz7mI42SPpQmfNecO1jMWPpxWOj1briE1bTDEJquSfOrN8=~-1~-1~-1~AAQAAAAG%2f%2f%2f%2f%2f6iKAlctq3g4qmailmkC9+JdwF68RkUyZCJfousprQ7meMKcegOGlJGPCmsJOq1kGSpLRmSjI821kDuhTGsFlDViRc6FYdEnGQmUge7GlbCD21WchMO49oALP5%2fDtofyl3AHktA%3d~-1)
+2026-08-04 10:51:17 [WARNING] _abck poisoned at startup, pre-emptive rotation
+2026-08-04 10:51:49 [INFO] Rotation recovery attempt 1
+2026-08-04 10:51:49 [DEBUG] User data dir: /tmp/undetectable_1785855109
+2026-08-04 10:51:49 [DEBUG] Using selector: EpollSelector
+2026-08-04 10:51:49 [INFO] Browser launching with proxy: http://p.webshare.io:80
+2026-08-04 10:52:04 [INFO] Recovery new IP: 68.48.70.163 (prev=unknown)
+2026-08-04 10:52:11 [INFO] Research warmup started (20s)
+2026-08-04 10:52:34 [INFO] Research warmup done
+2026-08-04 10:52:34 [WARNING] _abck POISONED: ~-1 found | full=E294B6F2F483283A776A2E404BC89C43~0~YAAQxwwDF2H4jq+fAQAA5eVCzRAOeoaAcEwVPCmbom7Ih4aXFaTX7lghqyqoxTTQh4VBe/JdFcmuEFWupdWqLsqdRx9bTl1wWqE4N9CRA+DDWQM6cJu2ZguP6dX9pYZin6OXkLTmdvvk7ooc/hCDMY2sUjw4t1r1BHrwzIrhha14CeFLFt27+8snAWor6WUmmvfTzdoGzSIGJP84Hi9yGdXPY3huTZ2RRDDBx3mEGbDSlP8sYr1SrDjTqBOF08X7k06bkiYtuQClkmGjaosFWZ22UmUTNL7xKNQ2tdX0z6BVRma1DXij45aZCDpuW2HVHwu/nK94AR8mH0Gh1czZQ4A7GW/hHaP2xHjJeN56F6FkVW/RnxmHG1ZkmHKutdptTtCtGggP/xvB5GUjQ6q7FVORJSPW5nsvviaprpW/7VM3oPYsEw7RzAdaQtaOqYKEPIRZwy9+44r5iByBtSDRYro7SE447ivfl3/a7Oa6pFX2uo0EqvmQtddIrKqKPykUrtgNzTYdhvJ9e3TVKp+fF4dVN+yYEHsXveodDeaoyHm1gJOXAaNhtDNmfkh1qlkVJ7dnr9tk+x13usCvkQdxpe3wG+B59+HTNhy5fZat2D7UxbfmoU3U1ngwcN9x0NLNd7hgh06Dr3pL5Z+KVICRY0JM460FURylX5mnX7Bv1kGb~-1~-1~-1~AAQAAAAG%2f%2f%2f%2f%2f4DxERvWm33mWEZqtdwziN7zX2hkgxDkX8z8O2YcAMOPss01Nuy8DCD+beZngHl5POvlsuWpD1txyf7+qEusb211GuoqQ6%2fcYjrz~-1
+2026-08-04 10:52:34 [WARNING] Recovery: _abck still poisoned on new IP
+2026-08-04 10:52:35 [ERROR] Pre-emptive rotation failed, exiting
+2026-08-04 10:53:25 [INFO] START | proxy=True rotate_every=10 max_rows=10
+2026-08-04 10:53:25 [DEBUG] User data dir: /tmp/undetectable_1785855205
+2026-08-04 10:53:25 [DEBUG] Using selector: EpollSelector
+2026-08-04 10:53:25 [INFO] Browser launching with proxy: http://p.webshare.io:80
+2026-08-04 10:53:32 [INFO] Initial IP: unknown
+2026-08-04 10:53:38 [INFO] Research warmup started (120s)
+2026-08-04 10:55:39 [INFO] Research warmup done
+2026-08-04 10:55:39 [WARNING] _abck POISONED: ~-1 found | full=65AE2DA67ADDFA8F12DAF7B78C3374E3~0~YAAQD1PRF+kDVbCfAQAAN11FzRBcSt2KTm/gOuwlq+Ie6ijHyZOExZ5ht2LZCjS2h04TPiiexwdUe021RDT8zCeYn/W7S5a64FOKrVfhhetabvvU2lYLBWiFhwLERs3E0ZzkxZHOevLiaqyS+e5yZ+ynF+YQUIjufgM9Ko7bjfXyYfxpI1p2zprPz/7MlEG/QYPyUYP48FiPKAlARkECMsVOBE8dh1TyPs6NiQ8C+g4Rr0v4Wmh5DIwcYieJCVHFkrNFsXVaK9cWcRiXiXtct/R0aZTxe6hj1MO1idfHV7pwX/buW2CTDTcNVxobhho6qv34Zh/9L4mmNDCLrZt4XVMbXK4861fQjqWFZWuAoz6aWTuT4HSygBio7f62+CLBC/LZnXWKhoE+iuYj/WfypZnHjmtOUcQGHn1Q95dwqan5+PwmfQ4RhcWucDCo8hJb5c/e7S8Tz51JQ5R9rVDDjAizGpS/Vhw+JAEHP0leWBeL3nOk7Q27h0JI8g/tIE68W1QUl+dWIhTklNu2scAi1QUo9ov1hyA8BEOgyOXbL1nXbJOMNv98G6HR7SJlUjarAbbq+89ewOvLp1EO4Ifx0JTComhg6iCpIA+KdcP5ivoc8aKY4y1tnxtfQDmQJ18zc6sHkJCMqC9xcYHF/ANgMqqfUCDuJ0aEzbOQ4pUxRjfh~-1~-1~-1~AAQAAAAG%2f%2f%2f%2f%2f6VxevnOMJcMPHRIH9LghA9NlHYqn5rFnelz%2fYghqkySshihNsqi6kNoSstJ3LnhqEDdUGLOAQIaY0gZ31nDnP6tDoBk35iNcwgh~-1
+2026-08-04 10:55:39 [INFO] Initial _abck: POISONED (full=65AE2DA67ADDFA8F12DAF7B78C3374E3~0~YAAQD1PRF+kDVbCfAQAAN11FzRBcSt2KTm/gOuwlq+Ie6ijHyZOExZ5ht2LZCjS2h04TPiiexwdUe021RDT8zCeYn/W7S5a64FOKrVfhhetabvvU2lYLBWiFhwLERs3E0ZzkxZHOevLiaqyS+e5yZ+ynF+YQUIjufgM9Ko7bjfXyYfxpI1p2zprPz/7MlEG/QYPyUYP48FiPKAlARkECMsVOBE8dh1TyPs6NiQ8C+g4Rr0v4Wmh5DIwcYieJCVHFkrNFsXVaK9cWcRiXiXtct/R0aZTxe6hj1MO1idfHV7pwX/buW2CTDTcNVxobhho6qv34Zh/9L4mmNDCLrZt4XVMbXK4861fQjqWFZWuAoz6aWTuT4HSygBio7f62+CLBC/LZnXWKhoE+iuYj/WfypZnHjmtOUcQGHn1Q95dwqan5+PwmfQ4RhcWucDCo8hJb5c/e7S8Tz51JQ5R9rVDDjAizGpS/Vhw+JAEHP0leWBeL3nOk7Q27h0JI8g/tIE68W1QUl+dWIhTklNu2scAi1QUo9ov1hyA8BEOgyOXbL1nXbJOMNv98G6HR7SJlUjarAbbq+89ewOvLp1EO4Ifx0JTComhg6iCpIA+KdcP5ivoc8aKY4y1tnxtfQDmQJ18zc6sHkJCMqC9xcYHF/ANgMqqfUCDuJ0aEzbOQ4pUxRjfh~-1~-1~-1~AAQAAAAG%2f%2f%2f%2f%2f6VxevnOMJcMPHRIH9LghA9NlHYqn5rFnelz%2fYghqkySshihNsqi6kNoSstJ3LnhqEDdUGLOAQIaY0gZ31nDnP6tDoBk35iNcwgh~-1)
+2026-08-04 10:55:39 [WARNING] _abck poisoned at startup, pre-emptive rotation
+2026-08-04 10:56:10 [INFO] Rotation recovery attempt 1
+2026-08-04 10:56:10 [DEBUG] User data dir: /tmp/undetectable_1785855370
+2026-08-04 10:56:10 [DEBUG] Using selector: EpollSelector
+2026-08-04 10:56:10 [INFO] Browser launching with proxy: http://p.webshare.io:80
+2026-08-04 10:56:18 [WARNING] Recovery: same IP returned (unknown)
+2026-08-04 10:56:18 [INFO] Recovery new IP: unknown (prev=unknown)
+2026-08-04 10:56:28 [INFO] Research warmup started (20s)
+2026-08-04 10:56:50 [INFO] Research warmup done
+2026-08-04 10:56:50 [WARNING] _abck POISONED: ~-1 found | full=3F0676A312FF605FCFCD3259F918507A~0~YAAQs+gtF1Ud6a6fAQAAnflGzRCRHTGXlPE8A4gp13WUOlv0ekfhXTqMYqp4OOrKtFmthj3rbTkMMnuZi4aeaxYE8z0I9qsABnOkfqQTxZ4kO9hCufCw1ZnmUaAV/2dmuy+GeJ98TGQ3JPUO8Vzr/DOhF2+zpKJpAIn38lgCCbwNXG8aJRljVErUg6Xx10lLDMNh/3VSe5uHlNqBm/rCKW3ikLlReG5EUnn0LZxzC0/t7NQqshRSaiUbwX0CQuZsgA5YT8CcGrAli732j14MTlEx+VBiNxlBS/gzndHjfgLk+DCpShD4pzzzO601qtvfLQODr1+FrrjVGPJq5rWEB9ar62tbfGuR97RuhqVyWzgbm+yIb8LrkGKpCnZdG81wO7DlkNPErr75h2XpeyM5YbiNtiKrMQGA5tZhNHmu7teQtitUxugriPcPz1ZNk96Ny5ulFmXlVdDq+oSSi/b+YxXBx+4z/8JATa8hfZtJo54DXNHVS46b1cS3dEoVN0vgNVvtsG+EO94dxyW8DKGSC/nx8qsU/rm+XGEckGuvsMtT05zExM4Yl814qwTHxdX9GQm1cTu3wXp7d0x0cjF819bmZhy4i3x45WoIrlTE3is8JqRnmXmYcWPVVOG8H3Wa2E/VDv0P8iNv6h3ThCUQyp7C7DVotmySUeS6Gs62X0uj~-1~-1~-1~AAQAAAAG%2f%2f%2f%2f%2f2JBLC2w5nb2kS070++UFrfCwZgsgEGC5FShMMI3E56MX0BGPelsxtxSunkB45pPQIBfrxlX68z5H0KUifWmPiVCl31RmvoRFT0W~-1
+2026-08-04 10:56:50 [WARNING] Recovery: _abck still poisoned on new IP
+2026-08-04 10:56:51 [ERROR] Pre-emptive rotation failed, exiting

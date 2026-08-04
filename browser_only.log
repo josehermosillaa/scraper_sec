@@ -1,0 +1,67 @@
+2026-08-03 18:23:19 [INFO] ============================================================
+2026-08-03 18:23:19 [INFO] browser_only_scraper.py START
+2026-08-03 18:23:19 [INFO] Anti-fingerprinting: canvas + WebGL + AudioContext | _abck: ON | max_rows=10
+2026-08-03 18:23:25 [DEBUG] Using selector: EpollSelector
+2026-08-03 18:23:31 [WARNING] _abck POISONED: A79DF165FE8DBB00466B40D3E7BCA384~0~YAAQimrcF8bqqaOfAQAA3oi5yRDzhZH79PTO17f/uvR+h...
+2026-08-03 18:23:52 [WARNING] _abck POISONED: A79DF165FE8DBB00466B40D3E7BCA384~0~YAAQimrcF9XrqaOfAQAApqG5yRDCTWuzMTjKinD1HEOxS...
+2026-08-03 18:24:04 [DEBUG] api_search_bin BIN=4624658
+2026-08-03 18:24:05 [DEBUG] api_search_bin BIN=4624658 OK: 5 jobs
+2026-08-03 18:24:36 [DEBUG] api_search_bin BIN=3331440
+2026-08-03 18:24:37 [WARNING] api_search_bin BIN=3331440 FAIL: AKAMAI_BLOCKED
+2026-08-03 18:24:37 [WARNING] AKAMAI_BLOCKED on BIN=3331440, attempting recovery
+2026-08-03 18:24:37 [WARNING] recover_from_akamai START (bad_cities=0)
+2026-08-03 18:24:37 [INFO] Recovery reload attempt 1/3
+2026-08-03 18:24:42 [WARNING] _abck POISONED: A79DF165FE8DBB00466B40D3E7BCA384~-1~YAAQimrcF0D3qaOfAQAAeaC6yRD9n8HFHRQQw371984P...
+2026-08-03 18:24:42 [INFO] Recovery reload attempt 2/3
+2026-08-03 18:24:48 [WARNING] _abck POISONED: A79DF165FE8DBB00466B40D3E7BCA384~-1~YAAQimrcF/X3qaOfAQAA5LW6yRCGATuY7lAgb+1+LkVw...
+2026-08-03 18:24:48 [INFO] Recovery reload attempt 3/3
+2026-08-03 18:24:53 [WARNING] _abck POISONED: A79DF165FE8DBB00466B40D3E7BCA384~-1~YAAQimrcF7j4qaOfAQAAo8m6yRDlU0C0WtIf4cbIG34M...
+2026-08-03 18:24:55 [INFO] VPN: rotando IP (New York)...
+2026-08-04 09:54:37 [INFO] ============================================================
+2026-08-04 09:54:37 [INFO] browser_only_scraper.py START
+2026-08-04 09:54:37 [INFO] Anti-fingerprinting: canvas + WebGL + AudioContext | _abck: ON | max_rows=10
+2026-08-04 09:54:38 [DEBUG] Using selector: EpollSelector
+2026-08-04 09:54:44 [INFO] VPN: rotando IP (New York)...
+2026-08-04 09:55:18 [DEBUG] Using selector: EpollSelector
+2026-08-04 09:55:48 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~-1~YAAQ22I0F75bEq6fAQAAi9QOzRB97jMuHjcNaBJRFAUb...
+2026-08-04 09:55:54 [DEBUG] api_search_bin BIN=4624658
+2026-08-04 09:55:54 [WARNING] api_search_bin BIN=4624658 FAIL: AKAMAI_BLOCKED
+2026-08-04 09:55:54 [WARNING] AKAMAI_BLOCKED on BIN=4624658, attempting recovery
+2026-08-04 09:55:54 [WARNING] recover_from_akamai START (bad_cities=0)
+2026-08-04 09:55:54 [INFO] Recovery reload attempt 1/3
+2026-08-04 09:55:59 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~-1~YAAQ22I0F6hjEq6fAQAA6z0PzRBmWlfC0qkCNW1+RreY...
+2026-08-04 09:55:59 [INFO] Recovery reload attempt 2/3
+2026-08-04 09:56:04 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~-1~YAAQ22I0F2FlEq6fAQAARlIPzRDatVB8dw7nDIrVd1gu...
+2026-08-04 09:56:04 [INFO] Recovery reload attempt 3/3
+2026-08-04 09:56:10 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~-1~YAAQ22I0F/RmEq6fAQAATmUPzRB99zR8NyZezc8Fe78i...
+2026-08-04 09:56:12 [INFO] VPN: rotando IP (Ashburn)...
+2026-08-04 09:56:52 [DEBUG] Using selector: EpollSelector
+2026-08-04 09:57:25 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~0~YAAQmGrcF4xPwK6fAQAA6GwQzRBHlzjGT/LloYS2IMhGm...
+2026-08-04 09:57:35 [DEBUG] api_search_bin BIN=4624658
+2026-08-04 09:57:36 [WARNING] api_search_bin BIN=4624658 FAIL: AKAMAI_BLOCKED
+2026-08-04 09:57:45 [DEBUG] api_search_bin BIN=3331440
+2026-08-04 09:57:46 [WARNING] api_search_bin BIN=3331440 FAIL: AKAMAI_BLOCKED
+2026-08-04 09:57:46 [WARNING] AKAMAI_BLOCKED on BIN=3331440, attempting recovery
+2026-08-04 09:57:46 [WARNING] recover_from_akamai START (bad_cities=0)
+2026-08-04 09:57:46 [INFO] Recovery reload attempt 1/3
+2026-08-04 09:57:48 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-698' coro=<Page.goto() done, defined at /home/josehermosillaa/.local/lib/python3.12/site-packages/patchright/_impl/_page.py:532> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[SyncBase._sync.<locals>.<lambda>() at /home/josehermosillaa/.local/lib/python3.12/site-packages/patchright/_impl/_sync_base.py:90, ProtocolCallback.__init__.<locals>.cb() at /home/josehermosillaa/.local/lib/python3.12/site-packages/patchright/_impl/_connection.py:198]>
+2026-08-04 09:58:02 [INFO] ============================================================
+2026-08-04 09:58:02 [INFO] browser_only_scraper.py START
+2026-08-04 09:58:02 [INFO] Anti-fingerprinting: canvas + WebGL + AudioContext | _abck: ON | max_rows=10
+2026-08-04 09:58:03 [DEBUG] Using selector: EpollSelector
+2026-08-04 09:58:10 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~0~YAAQmGrcFwdfwK6fAQAA+jkRzRBfnHI7kb7I/ZC4+MhBP...
+2026-08-04 09:58:31 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~0~YAAQmGrcF2thwK6fAQAAfFYRzRChUqvMryAmwo1KwKXv6...
+2026-08-04 09:58:34 [DEBUG] api_search_bin BIN=4624658
+2026-08-04 09:58:35 [WARNING] api_search_bin BIN=4624658 FAIL: AKAMAI_BLOCKED
+2026-08-04 09:58:35 [WARNING] AKAMAI_BLOCKED on BIN=4624658, attempting recovery
+2026-08-04 09:58:35 [WARNING] recover_from_akamai START (bad_cities=0)
+2026-08-04 09:58:35 [INFO] Recovery reload attempt 1/3
+2026-08-04 09:58:40 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~-1~YAAQmGrcF1BowK6fAQAAfrERzRBpGE25NpnKWinaxmOA...
+2026-08-04 09:58:40 [INFO] Recovery reload attempt 2/3
+2026-08-04 09:58:45 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~-1~YAAQmGrcFw5qwK6fAQAAlcYRzRBNtRrlpHKQAarbRmiP...
+2026-08-04 09:58:45 [INFO] Recovery reload attempt 3/3
+2026-08-04 09:58:51 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~-1~YAAQmGrcF+drwK6fAQAAG9wRzRA3FHEJy8o/2TAYcTRt...
+2026-08-04 09:58:53 [INFO] VPN: rotando IP (New York)...
+2026-08-04 09:59:23 [DEBUG] Using selector: EpollSelector
+2026-08-04 09:59:53 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~-1~YAAQ22I0FyuxEq6fAQAAXY0SzRBZb+YtHfXQj0LPDJqL...
