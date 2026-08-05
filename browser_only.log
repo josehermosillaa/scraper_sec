@@ -65,3 +65,6 @@ task: <Task pending name='Task-698' coro=<Page.goto() done, defined at /home/jos
 2026-08-04 09:58:53 [INFO] VPN: rotando IP (New York)...
 2026-08-04 09:59:23 [DEBUG] Using selector: EpollSelector
 2026-08-04 09:59:53 [WARNING] _abck POISONED: 059D17CBEA1CBB41E51C3AD939599113~-1~YAAQ22I0FyuxEq6fAQAAXY0SzRBZb+YtHfXQj0LPDJqL...
+2026-08-04 17:53:21 [INFO] ============================================================
+2026-08-04 17:53:21 [INFO] browser_only_scraper.py START
+2026-08-04 17:53:21 [INFO] Anti-fingerprinting: canvas + WebGL + AudioContext | _abck: ON | max_rows=10

@@ -1,0 +1,204 @@
+2026-08-05 09:58:56 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=0
+2026-08-05 09:59:04 [INFO] BIN 4624658 | Q00848877-I1 START
+2026-08-05 10:01:29 [INFO] BIN 4624658: 0 docs ZD | hits=0 misses=4 | 145.4s
+2026-08-05 10:01:29 [INFO] BIN 3331440 | B00738255-P1 START
+2026-08-05 10:03:54 [INFO] BIN 3331440: 0 docs ZD | hits=0 misses=8 | 144.9s
+2026-08-05 10:03:54 [INFO] BIN 1037605 | M01110102-I1 START
+2026-08-05 10:04:33 [ERROR] blocked: Sesion bloqueada o marcada: no se pueden hacer mas consultas
+2026-08-05 10:04:33 [INFO] DONE | processed=2 total_zd=0 hits=0 misses=9 stop_reason=blocked: Sesion bloqueada o marcada: no se pueden hacer mas consultas | log=C:\Users\joseh\OneDrive\Escritorio\rep\scraper_sec\conservative_scraper.log
+2026-08-05 10:14:47 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=0
+2026-08-05 10:14:54 [INFO] BIN 4624658 | Q00848877-I1 START
+2026-08-05 10:20:09 [INFO] BIN 4624658: 5 docs ZD | hits=0 misses=9 | 314.7s
+2026-08-05 10:20:09 [INFO] BIN 3331440 | B00738255-P1 START
+2026-08-05 10:21:08 [ERROR] blocked: Sesion bloqueada o marcada: no se pueden hacer mas consultas
+2026-08-05 10:21:08 [INFO] DONE | processed=1 total_zd=5 hits=0 misses=11 stop_reason=blocked: Sesion bloqueada o marcada: no se pueden hacer mas consultas | log=C:\Users\joseh\OneDrive\Escritorio\rep\scraper_sec\conservative_scraper.log
+2026-08-05 11:59:02 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=1
+2026-08-05 11:59:04 [INFO] BIN 3331440 | B00738255-P1 START
+2026-08-05 12:01:01 [INFO] BIN 3331440: 0 docs ZD | hits=1 misses=3 | 117.0s
+2026-08-05 12:01:01 [INFO] BIN 1037605 | M01110102-I1 START
+2026-08-05 12:03:21 [INFO] BIN 1037605: 0 docs ZD | hits=1 misses=7 | 140.1s
+2026-08-05 12:03:21 [INFO] BIN 2012957 | X01130339-P5 START
+2026-08-05 12:04:01 [ERROR] blocked: Sesion bloqueada o marcada: no se pueden hacer mas consultas
+2026-08-05 12:04:01 [INFO] DONE | processed=3 total_zd=0 hits=1 misses=8 stop_reason=blocked: Sesion bloqueada o marcada: no se pueden hacer mas consultas | log=C:\Users\joseh\OneDrive\Escritorio\rep\scraper_sec\conservative_scraper.log
+2026-08-05 12:14:55 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=3
+2026-08-05 12:14:56 [INFO] BIN 2012957 | X01130339-P5 START
+2026-08-05 12:17:13 [INFO] BIN 2012957: 0 docs ZD | hits=0 misses=4 | 136.5s
+2026-08-05 12:17:13 [INFO] BIN 2063767 | X01052403-I1 START
+2026-08-05 12:19:25 [WARNING] Block on zd1wd/portal_docs for guid=fbaad6f5-951: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 12:19:25 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 12:19:25 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 12:19:32 [WARNING] Recovery attempt 1 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF5zE3bmfAQAAzwa50hC/7GaLw5giYByhC9vBB8AbopASYCIUa/yPESE0YPYsl2MRO2t3pHopBKaq...
+2026-08-05 12:19:32 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 12:19:42 [WARNING] Recovery attempt 2 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF3zP3bmfAQAA4hy50hCR8gZLrNplnuXn2P7L4Xpvrs11ymEDgOelpvPGhO02eE+dMMfHAD6TUUCp...
+2026-08-05 12:19:42 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 12:19:58 [WARNING] Recovery attempt 3 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWFwfj3bmfAQAAfEa50hAlRtIBdtvlNskBI+hDPckRcW1APLS7IAxEkWdPGlNrq2GnVMBSZxmx5xJU...
+2026-08-05 12:19:58 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 12:20:02 [INFO] Launching Chrome CDP: C:\Program Files\Google\Chrome\Application\chrome.exe port=9222
+2026-08-05 12:27:09 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=4
+2026-08-05 12:27:10 [INFO] BIN 2063767 | X01052403-I1 START
+2026-08-05 12:30:59 [INFO] BIN 2063767: 3 docs ZD | hits=1 misses=6 | 228.7s
+2026-08-05 12:30:59 [INFO] BIN 3060844 | B01229007-I1 START
+2026-08-05 12:33:15 [INFO] BIN 3060844: 0 docs ZD | hits=1 misses=10 | 136.6s
+2026-08-05 12:33:15 [INFO] BIN 2130975 | X00625848-P3 START
+2026-08-05 12:34:00 [WARNING] SESSION_UNHEALTHY on search_bin BIN=2130975
+2026-08-05 12:34:00 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 12:34:00 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 12:34:05 [WARNING] Recovery attempt 1 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF+hv5LmfAQAAZlvG0hDzwtfZOILowLSzF/tTDtgsYUmGaUxZRD/8wUrjtYWTbvOWeeVbw9jkAlxZ...
+2026-08-05 12:34:05 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 12:34:16 [WARNING] Recovery attempt 2 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF2t65LmfAQAAM3LG0hButRZ/hdAU3c9VALwehoDJqW21fQpsUaLY6QqH2mKLMF0j1Nil4uFS2F/J...
+2026-08-05 12:34:16 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 12:34:32 [WARNING] Recovery attempt 3 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWFwyP5LmfAQAAMJrG0hC+4wkGM7hF5bOuVXTei4v1iPDe0pfbNTtk4muINRT5BkeDRw8LXRpDdmKl...
+2026-08-05 12:34:32 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 12:34:36 [INFO] Launching Chrome CDP: C:\Program Files\Google\Chrome\Application\chrome.exe port=9222
+2026-08-05 12:34:48 [INFO] Phase 2 success: _abck score=0 (840 chars, 7 segmentos)
+2026-08-05 12:34:48 [INFO] Retrying search_bin after full recovery for BIN=2130975
+2026-08-05 12:37:51 [INFO] BIN 2130975: 1 docs ZD | hits=1 misses=16 | 275.5s
+2026-08-05 12:37:51 [INFO] BIN 4112476 | Q08018024-I1 START
+2026-08-05 12:40:33 [WARNING] Block on zd1wd/portal_docs for guid=d63d001c-934: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 12:40:33 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 12:40:33 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 12:40:39 [WARNING] Recovery attempt 1 failed: _abck score=-1 106E1AFD6862035A254FDC65DEB87321~-1~YAAQSavWF6Ri57mfAQAAMl7M0hAW39rJwO5DgrmCnncnnfs+aO0JQ8ZYg3iOM/1nSP2//QnBT1xrz7ITVrUA...
+2026-08-05 12:40:39 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 12:40:50 [WARNING] Recovery attempt 2 failed: _abck score=-1 106E1AFD6862035A254FDC65DEB87321~-1~YAAQSavWF+Bu57mfAQAAJ3TM0hBkCaCe9faMXvQnxlfNnRDAecbDFVDuM4lSro29GIvjHI/IdD9BIdbSJ9UC...
+2026-08-05 12:40:50 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 12:41:05 [INFO] Session recovered after 3 attempts: _abck score=0 (1142 chars, 7 segmentos)
+2026-08-05 12:41:05 [INFO] Retrying zd1wd/portal_docs after recovery for guid=d63d001c-934
+2026-08-05 12:42:00 [INFO] BIN 4112476: 0 docs ZD | hits=1 misses=22 | 249.4s
+2026-08-05 12:42:00 [INFO] BIN 3002558 | B01203796-P1 START
+2026-08-05 12:44:39 [INFO] BIN 3002558: 0 docs ZD | hits=1 misses=26 | 158.5s
+2026-08-05 12:44:39 [INFO] DONE | processed=9 total_zd=4 hits=1 misses=26 stop_reason=completed | log=C:\Users\joseh\OneDrive\Escritorio\rep\scraper_sec\conservative_scraper.log
+2026-08-05 12:55:31 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=9
+2026-08-05 12:55:32 [INFO] BIN 3201080 | B08023268-P5 START
+2026-08-05 12:58:13 [INFO] BIN 3201080: 0 docs ZD | hits=0 misses=4 | 161.1s
+2026-08-05 12:58:13 [INFO] BIN 1083373 | M00731102-I1 START
+2026-08-05 13:00:29 [WARNING] Block on zd1wd/portal_docs for guid=03749c75-bec: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 13:00:29 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 13:00:29 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 13:00:34 [WARNING] Recovery attempt 1 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWFwe+8LmfAQAAVZre0hCC43oRaYVeSSwP22fq5Un48rP3zi62x6wrqKTj5HOFfUH7XiibjvqJIrtM...
+2026-08-05 13:00:34 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 13:00:45 [WARNING] Recovery attempt 2 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF/HH8LmfAQAAG7De0hAIIV8JCD0v2lmBmcOgX6rLnaP4NiQ3BKYgXGSGU8TBC+/az0j8fkmCTIa2...
+2026-08-05 13:00:45 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 13:01:01 [WARNING] Recovery attempt 3 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWFzDc8LmfAQAAj9ne0hCdVgXOc1c39vAy8OfJezb93Pb9mUn/tfqljLZtQas3953q4NFrSNfqLHcv...
+2026-08-05 13:01:01 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 13:01:05 [INFO] Launching Chrome CDP: C:\Program Files\Google\Chrome\Application\chrome.exe port=9222
+2026-08-05 13:01:18 [ERROR] Phase 2 failed: _abck score=-1 1B369EB02434DD9496996D31580F87A9~-1~YAAQSavWF6kM8bmfAQAAXC/f0hAU2/E6+OJBcor3smSWJjE+O0cEcNnxcbiIB1UUVwFMUThczDWV0Ez4NUZT...
+2026-08-05 13:01:18 [WARNING] BIN 1083373: AKAMAI_BLOCKED on docs (retry 1/3)
+2026-08-05 13:01:18 [ERROR] blocked: Blocked on docs — reintenta tras cambiar VPN
+2026-08-05 13:11:10 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=10
+2026-08-05 13:11:11 [INFO] BIN 1083373 | M00731102-I1 START
+2026-08-05 13:13:11 [INFO] BIN 1083373: 0 docs ZD | hits=1 misses=3 | 120.4s
+2026-08-05 13:13:11 [INFO] BIN 2004121 | X01202715-P1 START
+2026-08-05 13:15:18 [INFO] BIN 2004121: 0 docs ZD | hits=1 misses=7 | 126.9s
+2026-08-05 13:15:18 [INFO] BIN 3338267 | B01368057-I1 START
+2026-08-05 13:15:39 [WARNING] SESSION_UNHEALTHY on search_bin BIN=3338267
+2026-08-05 13:15:39 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 13:15:39 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 13:15:45 [WARNING] Recovery attempt 1 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF3lx97mfAQAAwX7s0hD78t6/OihNGgyyi+qIw6D5/uk8lwZM2WRoL6y+Mkf5DLDbDiNNileBTVaP...
+2026-08-05 13:15:45 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 13:15:55 [WARNING] Recovery attempt 2 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWFz9897mfAQAAmJTs0hAPrNiV7X5+OECOibjdxDeSRTjaG8Oy4+icT+I7nxtlC4M4rfQmMcHJ094t...
+2026-08-05 13:15:55 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 13:16:11 [WARNING] Recovery attempt 3 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF1eO97mfAQAAW73s0hBm3mVFKPVMpvPwlDa4ZeZGckL8myJ5VnqXHQggGnLv6qZ0UTIxuKslx977...
+2026-08-05 13:16:11 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 13:16:15 [INFO] Launching Chrome CDP: C:\Program Files\Google\Chrome\Application\chrome.exe port=9222 profile=:TEMP\chrome_cdp_profile
+2026-08-05 13:16:30 [ERROR] Failed to reconnect CDP port after restart
+2026-08-05 13:16:30 [WARNING] BIN 3338267: AKAMAI_BLOCKED (retry 1/3)
+2026-08-05 13:16:30 [ERROR] blocked: SESSION_UNHEALTHY — reintenta tras cambiar VPN
+2026-08-05 13:57:35 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=12
+2026-08-05 13:58:07 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=12
+2026-08-05 13:58:08 [INFO] BIN 3338267 | B01368057-I1 START
+2026-08-05 14:00:29 [INFO] BIN 3338267: 0 docs ZD | hits=0 misses=4 | 141.5s
+2026-08-05 14:00:29 [INFO] BIN 3196580 | B00809593-P2 START
+2026-08-05 14:02:45 [INFO] BIN 3196580: 0 docs ZD | hits=0 misses=8 | 136.1s
+2026-08-05 14:02:45 [INFO] BIN 3429270 | B00608989-I1 START
+2026-08-05 14:03:11 [WARNING] SESSION_UNHEALTHY on search_bin BIN=3429270
+2026-08-05 14:03:11 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 14:03:11 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 14:03:17 [INFO] Session recovered after 1 attempts: _abck score=0 (1508 chars, 7 segmentos)
+2026-08-05 14:03:17 [INFO] Retrying search_bin after full recovery for BIN=3429270
+2026-08-05 14:06:53 [INFO] BIN 3429270: 2 docs ZD | hits=0 misses=15 | 247.6s
+2026-08-05 14:06:53 [INFO] BIN 1059670 | M01364601-I1 START
+2026-08-05 14:09:23 [WARNING] Block on zd1wd/portal_docs for guid=87cd6aed-bb1: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 14:09:23 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 14:09:23 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 14:09:29 [WARNING] Recovery attempt 1 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF4TSDrqfAQAAHLEd0xBYFCko8sxfNfxgFONmJ6Aktc3X8Ygk1+n/nnhuln4O/UNESP3gastoL4je...
+2026-08-05 14:09:29 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 14:09:39 [WARNING] Recovery attempt 2 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF6faDrqfAQAAcsYd0xD5x+S/7kZUXp9VPUFpLIXkGfSN5kghCj/ISn/NR7568mhm1NL6BHp811h/...
+2026-08-05 14:09:39 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 14:09:55 [WARNING] Recovery attempt 3 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWFxXsDrqfAQAAcPAd0xCPMxEQ+hGDc3Wt96PXvINT3cVWGEODy6eHCVmJDtZ035VRcJ/GdwBIpeBl...
+2026-08-05 14:09:55 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 14:09:59 [INFO] Launching Chrome CDP: C:\Program Files\Google\Chrome\Application\chrome.exe port=9222 profile=C:\Users\joseh\AppData\Local\Temp\chrome_cdp_profile
+2026-08-05 14:10:13 [ERROR] Phase 2 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF4sSD7qfAQAA4Ege0xA4jJRDCgBNyBAEeOGIDaGZne7h6NbK0u4yhpySleRUibTlxeUZZGTbRKgx...
+2026-08-05 14:10:13 [WARNING] BIN 1059670: AKAMAI_BLOCKED on docs (retry 1/3)
+2026-08-05 14:10:13 [ERROR] blocked: Blocked on docs — reintenta tras cambiar VPN
+2026-08-05 14:14:14 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=15
+2026-08-05 14:14:15 [INFO] BIN 1059670 | M01364601-I1 START
+2026-08-05 14:16:10 [INFO] BIN 1059670: 0 docs ZD | hits=1 misses=3 | 115.3s
+2026-08-05 14:16:10 [INFO] BIN 1014387 | M01230242-P1 START
+2026-08-05 14:18:26 [INFO] BIN 1014387: 0 docs ZD | hits=1 misses=7 | 136.1s
+2026-08-05 14:18:26 [INFO] BIN 4178487 | Q00559762-I1 START
+2026-08-05 14:18:55 [WARNING] SESSION_UNHEALTHY on search_bin BIN=4178487
+2026-08-05 14:18:55 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 14:18:55 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 14:19:01 [WARNING] Recovery attempt 1 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF4G0ErqfAQAA8Wwm0xBVN7T+yk90p33oRLSAxk18wGMYpsFi7vzH5mwrCVuNaw8Qz1dCeKRIAHLW...
+2026-08-05 14:19:01 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 14:19:12 [INFO] Session recovered after 2 attempts: _abck score=0 (1418 chars, 7 segmentos)
+2026-08-05 14:19:12 [INFO] Retrying search_bin after full recovery for BIN=4178487
+2026-08-05 14:24:44 [INFO] BIN 4178487: 4 docs ZD | hits=1 misses=16 | 377.5s
+2026-08-05 14:24:44 [INFO] BIN 1040640 | M00906296-P3 START
+2026-08-05 14:26:59 [WARNING] Block on zd1wd/portal_docs for guid=7febdcfe-f1f: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 14:26:59 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 14:26:59 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 14:27:05 [WARNING] Recovery attempt 1 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWFw3zFbqfAQAArs4t0xCnrtEIlhdix8IQxsr79GfFa7Hwic2ayZLtrWvlOlkcY1CKOzSVO9nP2Rg4...
+2026-08-05 14:27:05 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 14:27:16 [INFO] Session recovered after 2 attempts: _abck score=0 (1450 chars, 7 segmentos)
+2026-08-05 14:27:16 [INFO] Retrying zd1wd/portal_docs after recovery for guid=7febdcfe-f1f
+2026-08-05 14:28:22 [INFO] BIN 1040640: 0 docs ZD | hits=1 misses=22 | 217.6s
+2026-08-05 14:28:22 [INFO] BIN 3080155 | B00825153-I1 START
+2026-08-05 14:30:27 [INFO] BIN 3080155: 0 docs ZD | hits=1 misses=26 | 125.3s
+2026-08-05 14:41:09 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=20
+2026-08-05 14:41:43 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=20
+2026-08-05 14:41:44 [INFO] BIN 1034500 | M00752792-I1 START
+2026-08-05 14:44:02 [INFO] BIN 1034500: 0 docs ZD | hits=0 misses=4 | 138.0s
+2026-08-05 14:44:02 [INFO] BIN 1084386 | M00955549-I1 START
+2026-08-05 14:45:56 [WARNING] Block on zd1wd/portal_docs for guid=fa682006-617: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 14:45:56 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 14:45:56 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 14:46:02 [WARNING] Recovery attempt 1 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWFw7yHbqfAQAAvyc/0xCX8Ebp5KPq4lMWuaYNmsyAqNyZFft8TrfXZqrhB8I3dHrhWBKa4A+H/3Zb...
+2026-08-05 14:46:02 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 14:46:12 [WARNING] Recovery attempt 2 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWFyb7HbqfAQAArTw/0xCNPVDRnoyUo4SRh1Z0szARmIEdH3QUPhq+2oCFnopWaqrV/cXAbxnQLTrf...
+2026-08-05 14:46:12 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 14:46:28 [WARNING] Recovery attempt 3 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF64PHrqfAQAAJmY/0xAiyS025UGXN3jsyz7nFMAyJg9RE2v7cj9HkhV5bFQj26/svDSvTsgSfD1Y...
+2026-08-05 14:46:28 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 14:46:32 [INFO] Launching Chrome CDP: C:\Program Files\Google\Chrome\Application\chrome.exe port=9222 profile=C:\Users\joseh\AppData\Local\Temp\chrome_cdp_profile
+2026-08-05 14:47:00 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 10s
+2026-08-05 14:47:10 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 10s
+2026-08-05 14:47:20 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 10s
+2026-08-05 14:47:30 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-05 14:47:30 [WARNING] BIN 1084386: AKAMAI_BLOCKED on docs (retry 1/3)
+2026-08-05 14:47:30 [ERROR] blocked: Blocked on docs — reintenta tras cambiar VPN
+2026-08-05 14:48:12 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=21
+2026-08-05 14:48:14 [INFO] BIN 1084386 | M00955549-I1 START
+2026-08-05 14:49:56 [INFO] BIN 1084386: 0 docs ZD | hits=1 misses=3 | 101.8s
+2026-08-05 14:49:56 [INFO] BIN 1080765 | M08000458-I1 START
+2026-08-05 14:51:51 [INFO] BIN 1080765: 0 docs ZD | hits=1 misses=7 | 115.7s
+2026-08-05 14:51:51 [INFO] BIN 4015653 | Q01325753-I1 START
+2026-08-05 14:52:30 [WARNING] SESSION_UNHEALTHY on search_bin BIN=4015653
+2026-08-05 14:52:30 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 14:52:30 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 14:52:36 [WARNING] Recovery attempt 1 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF73OILqfAQAASylF0xCObKtBCe6RaH5QYwXfFx38lz4M9d4F3USvCD9OLLC2cdnUsp+sEIPsfVEl...
+2026-08-05 14:52:36 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 14:52:46 [INFO] Session recovered after 2 attempts: _abck score=0 (1422 chars, 7 segmentos)
+2026-08-05 14:52:46 [INFO] Retrying search_bin after full recovery for BIN=4015653
+2026-08-05 14:54:41 [INFO] BIN 4015653: 0 docs ZD | hits=1 misses=12 | 169.8s
+2026-08-05 14:54:41 [INFO] BIN 4210898 | Q01041358-I1 START
+2026-08-05 14:56:50 [WARNING] Block on zd1wd/portal_docs for guid=899e5e47-790: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 14:56:50 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 14:56:50 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 14:56:56 [WARNING] Recovery attempt 1 failed: _abck score=-1 5F8E400E19D06EA9380700F256D8BCD5~-1~YAAQSavWF1SdIrqfAQAAWyNJ0xAciFTO7+rttDzplGFV2HOam2m/466hi2F8hkuAi9e0eBQU7NCgsvN8qeJN...
+2026-08-05 14:56:56 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 14:57:07 [INFO] Session recovered after 2 attempts: _abck score=0 (1422 chars, 7 segmentos)
+2026-08-05 14:57:07 [INFO] Retrying zd1wd/portal_docs after recovery for guid=899e5e47-790
+2026-08-05 14:58:24 [INFO] BIN 4210898: 0 docs ZD | hits=1 misses=18 | 222.5s
+2026-08-05 14:58:24 [INFO] BIN 3042533 | B00464221-S2 START
+2026-08-05 15:00:32 [INFO] BIN 3042533: 0 docs ZD | hits=1 misses=22 | 128.4s
+2026-08-05 15:00:32 [INFO] DONE | processed=26 total_zd=0 hits=1 misses=22 stop_reason=completed | log=C:\Users\joseh\OneDrive\Escritorio\rep\scraper_sec\conservative_scraper.log

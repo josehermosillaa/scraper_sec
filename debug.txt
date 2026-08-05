@@ -1,0 +1,4 @@
+& "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="$env:TEMP\chrome_cdp_profile"
+
+bash 
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\Users\joseh\AppData\Local\Temp\chrome_cdp_profile"
