@@ -586,7 +586,10 @@ class BrowserSession:
         if self.driver:
             for attempt in range(3):
                 try:
-                    self.driver.get("https://a810-dobnow.nyc.gov/Publish/")
+                    from selenium.webdriver.common.keys import Keys
+                    from selenium.webdriver.common.by import By
+                    body = self.driver.find_element(By.TAG_NAME, "body")
+                    body.send_keys(Keys.F5)
                     time.sleep(5)
                     if self._page_is_blocked():
                         print("  Acceso denegado al refrescar.")
@@ -599,32 +602,48 @@ class BrowserSession:
                     time.sleep(3)
             return False
         else:
-            self.page.goto(
-                "https://a810-dobnow.nyc.gov/Publish/",
-                wait_until="load"
-            )
+            try:
+                self.page.evaluate("document.body.focus()")
+            except Exception:
+                pass
+            try:
+                self.page.keyboard.press("F5")
+            except Exception:
+                self.page.reload(wait_until="load")
             time.sleep(3)
+            try:
+                self.page.wait_for_load_state("load")
+            except Exception:
+                pass
             self.wait_for_angular(timeout=20)
             return True
 
     def refresh_session(self):
         if self.driver:
             try:
-                self.driver.get("https://a810-dobnow.nyc.gov/Publish/")
+                from selenium.webdriver.common.keys import Keys
+                from selenium.webdriver.common.by import By
+                body = self.driver.find_element(By.TAG_NAME, "body")
+                body.send_keys(Keys.F5)
                 time.sleep(5)
                 return self.wait_for_angular(timeout=30)
             except Exception:
                 return False
         else:
             try:
-                self.page.goto(
-                    "https://a810-dobnow.nyc.gov/Publish/",
-                    wait_until="load"
-                )
-                time.sleep(3)
-                return self.wait_for_angular(timeout=30)
+                self.page.evaluate("document.body.focus()")
             except Exception:
-                return False
+                pass
+            try:
+                self.page.keyboard.press("F5")
+            except Exception:
+                self.page.reload(wait_until="load")
+            time.sleep(3)
+            try:
+                self.page.wait_for_load_state("load")
+            except Exception:
+                pass
+            return self.wait_for_angular(timeout=30)
 
     def is_logged_in(self):
         try:

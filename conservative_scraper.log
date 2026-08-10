@@ -202,3 +202,519 @@
 2026-08-05 14:58:24 [INFO] BIN 3042533 | B00464221-S2 START
 2026-08-05 15:00:32 [INFO] BIN 3042533: 0 docs ZD | hits=1 misses=22 | 128.4s
 2026-08-05 15:00:32 [INFO] DONE | processed=26 total_zd=0 hits=1 misses=22 stop_reason=completed | log=C:\Users\joseh\OneDrive\Escritorio\rep\scraper_sec\conservative_scraper.log
+2026-08-05 15:35:23 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=26
+2026-08-05 15:35:25 [INFO] BIN 1041332 | M00922879-I1 START
+2026-08-05 15:36:18 [INFO] BIN 1041332: 0 docs ZD | hits=0 misses=4 | 53.3s
+2026-08-05 15:36:18 [INFO] BIN 3167212 | B00909563-I1 START
+2026-08-05 15:36:56 [WARNING] Block on zd1wd/portal_docs for guid=81dcfa56-1f2: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 15:36:56 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 15:36:56 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 15:37:06 [WARNING] Recovery attempt 1 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIFxp+tbOfAQAApeRt0xCxrQ4sOP9jgKUe1iW8uZ4M+aZjlaHWv3R8T1EGJsT0FzcrE9AdQ9k4jhX6...
+2026-08-05 15:37:06 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 15:37:16 [INFO] Session recovered after 2 attempts: _abck score=0 (1186 chars, 7 segmentos)
+2026-08-05 15:37:16 [INFO] Retrying zd1wd/portal_docs after recovery for guid=81dcfa56-1f2
+2026-08-05 15:37:37 [INFO] BIN 3167212: 0 docs ZD | hits=0 misses=10 | 79.4s
+2026-08-05 15:37:37 [INFO] BIN 1019548 | M00745181-I1 START
+2026-08-05 15:38:17 [INFO] BIN 1019548: 0 docs ZD | hits=0 misses=14 | 39.3s
+2026-08-05 15:38:17 [INFO] BIN 1006794 | M07993598-I1 START
+2026-08-05 15:38:24 [WARNING] SESSION_UNHEALTHY on search_bin BIN=1006794
+2026-08-05 15:38:24 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 15:38:24 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 15:38:32 [WARNING] Recovery attempt 1 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF1uGtbOfAQAAVjZv0xAbg8qxFE9GunlHr1nn/seLn8581yENsZvezLe4q+89xirwjOQbOIPaMaVB...
+2026-08-05 15:38:32 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 15:38:43 [WARNING] Recovery attempt 2 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF7+GtbOfAQAAgE9v0xDmR97rW2TwTsH75fch2wSndTUijjmnL+zVPiQpUy1YuhV2lMV1OmI40bc3...
+2026-08-05 15:38:43 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 15:39:02 [WARNING] Recovery attempt 3 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF72HtbOfAQAAg4Vv0xBPYzppzbGunaKAIsJmEWRspy2l7audm8Iaek4FbaFExtqN9OVur/yLvqwY...
+2026-08-05 15:39:02 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 15:39:06 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 15:39:47 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 15:40:07 [INFO] Phase 2 success: _abck score=0 (1190 chars, 7 segmentos)
+2026-08-05 15:40:07 [INFO] Retrying search_bin after full recovery for BIN=1006794
+2026-08-05 15:40:50 [INFO] BIN 1006794: 0 docs ZD | hits=0 misses=19 | 153.7s
+2026-08-05 15:40:50 [INFO] BIN 1044864 | M01222872-P1 START
+2026-08-05 15:41:47 [INFO] BIN 1044864: 0 docs ZD | hits=0 misses=23 | 56.4s
+2026-08-05 15:41:47 [INFO] BIN 1041451 | M01229547-I1 START
+2026-08-05 15:41:53 [WARNING] SESSION_UNHEALTHY on search_bin BIN=1041451
+2026-08-05 15:41:53 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 15:41:53 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 15:42:00 [WARNING] Recovery attempt 1 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQZ1UXAulEsqqfAQAA8mBy0xA6NFKgSTXCdbopGd+Gfo+VQtj6VDA+bwiextTEaquRDIrpzmKQmYynvPz2...
+2026-08-05 15:42:00 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 15:42:11 [WARNING] Recovery attempt 2 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQZ1UXAvhJsqqfAQAAU3ly0xAOwP3g7D3e8xoRA5j+KBRuzeGbgqjBYm55ZgOHwZC1064ybViTbekFRcWd...
+2026-08-05 15:42:11 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 15:42:29 [INFO] Session recovered after 3 attempts: _abck score=0 (1224 chars, 7 segmentos)
+2026-08-05 15:42:29 [INFO] Retrying search_bin after full recovery for BIN=1041451
+2026-08-05 15:43:21 [INFO] BIN 1041451: 0 docs ZD | hits=0 misses=28 | 94.8s
+2026-08-05 15:43:21 [INFO] BIN 1088109 | M00894099-P2 START
+2026-08-05 15:43:53 [WARNING] Block on zd1wd/portal_docs for guid=92ba5bbd-046: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 15:43:53 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 15:43:53 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 15:44:00 [WARNING] Recovery attempt 1 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQZ1UXAqGzsqqfAQAAbjh00xDImlAQMw0gvC6UEFZrSIfila2ctQYhJwEd+7qjt4zU+8HIANeoe2p5EnNr...
+2026-08-05 15:44:00 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 15:44:11 [WARNING] Recovery attempt 2 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQZ1UXAhe5sqqfAQAAAFB00xCBgJTskrM9sjnHTbmja3K4AEZ6PtWEInbOEU+RTA7NXix3+PQ1xed2P2HW...
+2026-08-05 15:44:11 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 15:44:28 [WARNING] Recovery attempt 3 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQZ1UXAqfDsqqfAQAAyXx00xD+4nPPvS1CgjglQp5k80nRqE2TrXsqKiVBGbP4L/1CpMkPVfDf2Zz8dnGu...
+2026-08-05 15:44:28 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 15:44:32 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 15:45:11 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 15:45:31 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 15:45:51 [INFO] Phase 2 success: _abck score=0 (1266 chars, 7 segmentos)
+2026-08-05 15:45:51 [INFO] Retrying zd1wd/portal_docs after recovery for guid=92ba5bbd-046
+2026-08-05 15:46:09 [INFO] BIN 1088109: 0 docs ZD | hits=0 misses=34 | 167.0s
+2026-08-05 15:46:09 [INFO] BIN 2093964 | X01284517-I1 START
+2026-08-05 15:46:59 [INFO] BIN 2093964: 0 docs ZD | hits=0 misses=38 | 50.5s
+2026-08-05 15:46:59 [INFO] BIN 4003159 | Q01203438-I1 START
+2026-08-05 15:47:05 [WARNING] SESSION_UNHEALTHY on search_bin BIN=4003159
+2026-08-05 15:47:05 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 15:47:05 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 15:47:11 [WARNING] Recovery attempt 1 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQZ1UXAh9Ss6qfAQAAbiF30xDKtW6LjyzWXCXiraS09frMRP/FmS6z33OhQwjuRNu3wiqkZw/ki6J3c+N0...
+2026-08-05 15:47:11 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 15:47:21 [WARNING] Recovery attempt 2 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQZ1UXAl1Xs6qfAQAALDd30xDXxtRxpHtuGeOi7G5BC2lUVY1K44C1FA5lsxz/eV6vNNf2LjIaZsMctrxu...
+2026-08-05 15:47:21 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 15:47:37 [WARNING] Recovery attempt 3 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQZ1UXAspfs6qfAQAAt2B30xDDzI8Eg178DThmqvdk0LJNkQbzk8VcPi74Smgh3j+YKEK1ybcXsk2ogMvk...
+2026-08-05 15:47:37 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 15:47:41 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 15:48:20 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 15:48:40 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 15:49:00 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-05 15:49:20 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-05 15:49:20 [WARNING] BIN 4003159: AKAMAI_BLOCKED (retry 1/3)
+2026-08-05 15:49:20 [ERROR] blocked: SESSION_UNHEALTHY — reintenta tras cambiar VPN
+2026-08-05 15:49:51 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=34
+2026-08-05 15:50:22 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=34
+2026-08-05 15:50:53 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=34
+2026-08-05 15:51:24 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=34
+2026-08-05 15:51:25 [INFO] BIN 4003159 | Q01203438-I1 START
+2026-08-05 15:52:09 [INFO] BIN 4003159: 0 docs ZD | hits=0 misses=4 | 44.4s
+2026-08-05 15:52:09 [INFO] BIN 1002320 | M00849309-I1 START
+2026-08-05 15:52:43 [WARNING] Block on zd1wd/portal_docs for guid=5734e4e3-d6c: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 15:52:43 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 15:52:43 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 15:52:50 [WARNING] Recovery attempt 1 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF1LBtbOfAQAA/Ex80xDCfl0quausc3cy14L5jIJQ8ZTPWNoaydOBG0GEh/zC4UV6qZOJ5vLFe03+...
+2026-08-05 15:52:50 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 15:53:01 [WARNING] Recovery attempt 2 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF6/BtbOfAQAAyWR80xBlBgv+eA5DiGGMG7LLF6pV9a1J4RLsdMYtYRY3yH6nrHGkSjvDuT6AsPfR...
+2026-08-05 15:53:01 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 15:53:17 [WARNING] Recovery attempt 3 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF4zCtbOfAQAAOY980xCy+aQhH68dN7YucJcwu76VX3nE7zeXd5eXHmCIS74R+Zr/TrN4Egi7Eq3J...
+2026-08-05 15:53:17 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 15:53:21 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 15:53:59 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 15:54:19 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 15:54:39 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-05 15:54:59 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-05 15:54:59 [WARNING] BIN 1002320: AKAMAI_BLOCKED on docs (retry 1/3)
+2026-08-05 15:54:59 [ERROR] blocked: Blocked on docs — reintenta tras cambiar VPN
+2026-08-05 15:55:29 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=35
+2026-08-05 15:56:01 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=35
+2026-08-05 15:56:32 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=35
+2026-08-05 15:56:32 [INFO] BIN 1002320 | M00849309-I1 START
+2026-08-05 15:57:05 [INFO] BIN 1002320: 0 docs ZD | hits=1 misses=3 | 32.7s
+2026-08-05 15:57:05 [INFO] BIN 2084656 | X01270006-I1 START
+2026-08-05 15:57:48 [INFO] BIN 2084656: 0 docs ZD | hits=1 misses=7 | 43.5s
+2026-08-05 15:57:48 [INFO] BIN 4123454 | Q00640102-P5 START
+2026-08-05 15:58:00 [WARNING] SESSION_UNHEALTHY on search_bin BIN=4123454
+2026-08-05 15:58:00 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 15:58:00 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 15:58:07 [WARNING] Recovery attempt 1 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF03WtbOfAQAAEiSB0xCepR/1jaRNQeplZuzvL004FXEhOCEosunDcIASNxFvKM/Io2+uvVmRsSP1...
+2026-08-05 15:58:07 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 15:58:18 [WARNING] Recovery attempt 2 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF7LWtbOfAQAAbzuB0xCWMBNXqHzk0Bry+FwU0xyEkWAZoi1Kb69ZBXsu2nicVJCbwQoJYnopytZC...
+2026-08-05 15:58:18 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 15:58:34 [WARNING] Recovery attempt 3 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF2HXtbOfAQAA1WWB0xCv3xi9hoEHkkDZcDt3wlNCS3vMTP3VqPSE6n2yIVgwmUIUih2QJacpLMfF...
+2026-08-05 15:58:34 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 15:58:38 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 15:59:16 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 15:59:36 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 15:59:56 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-05 16:00:16 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-05 16:00:16 [WARNING] BIN 4123454: AKAMAI_BLOCKED (retry 1/3)
+2026-08-05 16:00:16 [ERROR] blocked: SESSION_UNHEALTHY — reintenta tras cambiar VPN
+2026-08-05 16:00:46 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=37
+2026-08-05 16:00:47 [INFO] BIN 4123454 | Q00640102-P5 START
+2026-08-05 16:01:25 [INFO] BIN 4123454: 0 docs ZD | hits=0 misses=4 | 37.4s
+2026-08-05 16:01:25 [INFO] BIN 1007385 | M00841344-I1 START
+2026-08-05 16:01:58 [WARNING] Block on zd1wd/portal_docs for guid=b860459b-85b: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 16:01:58 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 16:01:58 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 16:02:04 [WARNING] Recovery attempt 1 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIFyzktbOfAQAA6sGE0xCQLdllMQ1mExiguuHuC1QiujxA4T3LuOwP3YZb9WhGI8r+RU1F79ZfU5CK...
+2026-08-05 16:02:04 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 16:02:14 [WARNING] Recovery attempt 2 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF3PktbOfAQAAFNeE0xBqT8Ef7wwxJU0h7/Lu1Ox35kvoFD6zdOMnXtSkjVBMFv7fDOyVQIsIPzbX...
+2026-08-05 16:02:14 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 16:02:30 [WARNING] Recovery attempt 3 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF9zktbOfAQAALQCF0xCWesfckOVIFLyGZNfKMvLJZIhwNrpBOAtg3KsmPkrJeJOdyKXSLyjP0IUN...
+2026-08-05 16:02:30 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 16:02:34 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 16:03:14 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 16:03:34 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 16:03:54 [INFO] Phase 2 success: _abck score=0 (1336 chars, 7 segmentos)
+2026-08-05 16:03:54 [INFO] Retrying zd1wd/portal_docs after recovery for guid=b860459b-85b
+2026-08-05 16:04:11 [INFO] BIN 1007385: 0 docs ZD | hits=0 misses=10 | 166.1s
+2026-08-05 16:04:11 [INFO] BIN 3325913 | B01209933-P1 START
+2026-08-05 16:04:53 [INFO] BIN 3325913: 0 docs ZD | hits=0 misses=14 | 41.8s
+2026-08-05 16:04:53 [INFO] BIN 2060157 | X01375706-I1 START
+2026-08-05 16:05:00 [WARNING] SESSION_UNHEALTHY on search_bin BIN=2060157
+2026-08-05 16:05:00 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 16:05:00 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 16:05:07 [WARNING] Recovery attempt 1 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF1/utbOfAQAAIYyH0xBMBKsBZRXIZEzellQ3dZk8RN0ddTTft9i/xgjUIoQY7wg5RDTPpTs4C3yv...
+2026-08-05 16:05:07 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 16:05:18 [WARNING] Recovery attempt 2 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF+butbOfAQAAxKOH0xAyzGRGKNCkKTS3jB3/mhgNI3mWlaqpWAliKeN1pwOt33jseXSOh9A/Okbd...
+2026-08-05 16:05:18 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 16:05:34 [WARNING] Recovery attempt 3 failed: _abck score=-1 397E57C3F575FB75D724DED9A5D90442~-1~YAAQ0KXIF6bvtbOfAQAAVc6H0xBubCgJwkStC5GhhVQOSH2DXc5T3ZqPdf+0OMvug2OvtiyOTp7Bzp7hCUOh...
+2026-08-05 16:05:34 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 16:05:38 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 16:06:17 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 16:06:37 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 16:06:57 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-05 16:07:17 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-05 16:07:17 [WARNING] BIN 2060157: AKAMAI_BLOCKED (retry 1/3)
+2026-08-05 16:07:17 [ERROR] blocked: SESSION_UNHEALTHY — reintenta tras cambiar VPN
+2026-08-05 16:07:47 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:08:19 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:08:50 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:09:21 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:09:51 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:10:22 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:10:53 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:11:24 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:11:55 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:12:25 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:12:56 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:23:48 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:24:20 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:24:20 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-3' coro=<Connection.run.<locals>.init() running at /home/josehermosillaa/.local/lib/python3.12/site-packages/patchright/_impl/_connection.py:272> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[ProtocolCallback.__init__.<locals>.cb() at /home/josehermosillaa/.local/lib/python3.12/site-packages/patchright/_impl/_connection.py:198]>
+2026-08-05 16:24:27 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:24:58 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:25:29 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:26:00 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:26:30 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:28:10 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:28:42 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:29:13 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:29:44 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:30:15 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:31:45 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:32:17 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:40:51 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=40
+2026-08-05 16:40:52 [INFO] BIN 2060157 | X01375706-I1 START
+2026-08-05 16:41:56 [INFO] BIN 2060157: 0 docs ZD | hits=0 misses=4 | 64.0s
+2026-08-05 16:41:56 [INFO] BIN 1085979 | M00848788-I1 START
+2026-08-05 16:42:26 [WARNING] Block on zd1wd/portal_docs for guid=3663262c-8dc: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 16:42:26 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 16:42:26 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 16:42:32 [WARNING] Recovery attempt 1 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQmGrcF6qqJa+fAQAAkc+p0xAvLpEGjhxN7g2x+3jOiisAhFej/5WeEalRPBV+L9HUfz6XWFwe74MYB2By...
+2026-08-05 16:42:32 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 16:42:43 [WARNING] Recovery attempt 2 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQmGrcF7usJa+fAQAAeeep0xBzh0OEX15MGkYuj/HD+FoGdOp3tSWUic9s0lpJj8zgdxUZZdG5ZzXCt29z...
+2026-08-05 16:42:43 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 16:42:59 [WARNING] Recovery attempt 3 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQmGrcFz2wJa+fAQAA0hCq0xACE94aVUO4LBpUu6cJ1g0y9WXc4oE2XDApaK8PLduz3BtFKDYLIsVS8XQf...
+2026-08-05 16:42:59 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 16:43:03 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 16:43:44 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 16:44:04 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 16:44:24 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-05 16:44:44 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-05 16:44:44 [WARNING] BIN 1085979: AKAMAI_BLOCKED on docs (retry 1/3)
+2026-08-05 16:44:44 [ERROR] blocked: Blocked on docs — reintenta tras cambiar VPN
+2026-08-05 16:45:15 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:45:47 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:46:17 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:46:48 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:48:25 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:48:57 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:49:28 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:49:59 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:50:30 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:52:01 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:52:33 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:53:04 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:53:35 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:54:06 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:55:37 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:56:09 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:56:40 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:57:11 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:57:42 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 16:59:14 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 17:04:55 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 17:05:25 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=41
+2026-08-05 17:05:26 [INFO] BIN 1085979 | M00848788-I1 START
+2026-08-05 17:06:02 [INFO] BIN 1085979: 0 docs ZD | hits=1 misses=3 | 35.7s
+2026-08-05 17:06:02 [INFO] BIN 1083247 | M00765885-I1 START
+2026-08-05 17:06:44 [INFO] BIN 1083247: 0 docs ZD | hits=1 misses=7 | 42.3s
+2026-08-05 17:06:44 [INFO] BIN 4197695 | Q01146158-I1 START
+2026-08-05 17:06:51 [WARNING] SESSION_UNHEALTHY on search_bin BIN=4197695
+2026-08-05 17:06:51 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 17:06:51 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 17:06:57 [WARNING] Recovery attempt 1 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQrwYsF6VXUqifAQAAhSrA0xA0GugKBbID5oNbHAPOtyEtga5LpScmeCDnigDS+vqKsY1OwTuinO5/dsZw...
+2026-08-05 17:06:57 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 17:07:08 [WARNING] Recovery attempt 2 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQrwYsF6tZUqifAQAA0EHA0xA5n4PHcE0lqbF45KRBTZzFpdevsrrCNppspKKBtw7dbQRB++cXDqvDl7MJ...
+2026-08-05 17:07:08 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 17:07:24 [WARNING] Recovery attempt 3 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQrwYsF9pdUqifAQAAEmvA0xDANEcImI2jGuszi66bcRcG5lRp3gbdOrEcsITjM3+n7Zpf2M+5YEU6IejK...
+2026-08-05 17:07:24 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 17:07:28 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 17:08:06 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 17:08:26 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 17:08:46 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-05 17:09:06 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-05 17:09:06 [WARNING] BIN 4197695: AKAMAI_BLOCKED (retry 1/3)
+2026-08-05 17:09:06 [ERROR] blocked: SESSION_UNHEALTHY — reintenta tras cambiar VPN
+2026-08-05 17:09:36 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:10:08 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:10:39 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:11:10 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:11:40 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:12:11 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:12:42 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:13:13 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:13:44 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:14:14 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:14:45 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:15:17 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:15:47 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:16:18 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=43
+2026-08-05 17:16:19 [INFO] BIN 4197695 | Q01146158-I1 START
+2026-08-05 17:16:57 [INFO] BIN 4197695: 0 docs ZD | hits=0 misses=4 | 37.7s
+2026-08-05 17:16:57 [INFO] BIN 1083247 | M00528558-P2 START
+2026-08-05 17:17:25 [INFO] BIN 1083247: 0 docs ZD | hits=1 misses=7 | 28.5s
+2026-08-05 17:17:25 [INFO] BIN 2008194 | X00534348-I1 START
+2026-08-05 17:17:34 [WARNING] SESSION_UNHEALTHY on search_bin BIN=2008194
+2026-08-05 17:17:34 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 17:17:34 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 17:17:40 [WARNING] Recovery attempt 1 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQrwYsF7E6U6ifAQAA0/bJ0xBlu/EENbwo8TplrYd+hPcskG8iNJfOiikh+Uk0ifx5RgOlZjK94jF3xf0b...
+2026-08-05 17:17:40 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 17:17:50 [WARNING] Recovery attempt 2 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQrwYsF5k8U6ifAQAAZgzK0xA4QH+rvJXezBq91+vIdA+Z3yEPzbcj0+CFRQypwy+s+eaVBy0v7fIK+Mnd...
+2026-08-05 17:17:50 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 17:18:06 [WARNING] Recovery attempt 3 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQrwYsF6w/U6ifAQAA0DXK0xAa93WYR94m7tlsQRJxqOryEuwXUvIS3f7wPIrzAIQo6/ECHsWKRFcJKuGX...
+2026-08-05 17:18:06 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 17:18:10 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 17:18:50 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 17:19:10 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 17:19:30 [INFO] Phase 2 success: _abck score=0 (1350 chars, 7 segmentos)
+2026-08-05 17:19:30 [INFO] Retrying search_bin after full recovery for BIN=2008194
+2026-08-05 17:20:09 [INFO] BIN 2008194: 0 docs ZD | hits=1 misses=12 | 164.4s
+2026-08-05 17:20:09 [INFO] BIN 4122136 | Q00538221-S1 START
+2026-08-05 17:20:45 [WARNING] Block on zd1wd/portal_docs for guid=a4c06ece-ad0: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 17:20:45 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 17:20:45 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 17:20:51 [WARNING] Recovery attempt 1 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQrwYsF8WAU6ifAQAAbuPM0xAB/3y/V5XR8nZ+6s4TlBGJ/JlnfHZG9xRBTQPn9VogMFOs8wyDD/XD8S/f...
+2026-08-05 17:20:51 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 17:21:02 [WARNING] Recovery attempt 2 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQrwYsF16CU6ifAQAAvPnM0xBxTwZoHgVmUb45DwQ3EYFqdiwy+ByCeqaOoWHLPzqKxXJFLWgWiojFkl3Y...
+2026-08-05 17:21:02 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 17:21:17 [WARNING] Recovery attempt 3 failed: _abck score=-1 CAE414D60EE8E88052A8EE2A65B3E98D~-1~YAAQrwYsF62FU6ifAQAAOCPN0xDJujSLU+tegctqX2w2O/RZQmc5bdOMAEnU4d6VYwfHzoMyrdhmMGjSYynf...
+2026-08-05 17:21:17 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 17:21:21 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 17:22:00 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 17:22:20 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 17:22:40 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-05 17:23:00 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-05 17:23:00 [WARNING] BIN 4122136: AKAMAI_BLOCKED on docs (retry 1/3)
+2026-08-05 17:23:00 [ERROR] blocked: Blocked on docs — reintenta tras cambiar VPN
+2026-08-05 17:23:30 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=46
+2026-08-05 17:24:01 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=46
+2026-08-05 17:24:32 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=46
+2026-08-05 17:25:03 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=46
+2026-08-05 18:47:06 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=46
+2026-08-05 18:47:08 [INFO] BIN 4122136 | Q00538221-S1 START
+2026-08-05 18:47:51 [INFO] BIN 4122136: 1 docs ZD | hits=1 misses=4 | 42.7s
+2026-08-05 18:47:51 [INFO] BIN 3336006 | B01242027-I1 START
+2026-08-05 18:48:31 [INFO] BIN 3336006: 0 docs ZD | hits=1 misses=8 | 40.1s
+2026-08-05 18:48:31 [INFO] BIN 2021536 | X08004456-P1 START
+2026-08-05 18:48:42 [WARNING] SESSION_UNHEALTHY on search_bin BIN=2021536
+2026-08-05 18:48:42 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 18:48:42 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 18:48:48 [WARNING] Recovery attempt 1 failed: _abck score=-1 B94CAA20D855ACB10AFEFBFB0D9523AC~-1~YAAQimrcFx27KaSfAQAAumcd1BDKpq9Eu9eu9w4vAZnrl5hIzenUddvU3Xg+07ZFk7cNt/owdwbKQ0xnYJYN...
+2026-08-05 18:48:48 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 18:48:59 [WARNING] Recovery attempt 2 failed: _abck score=-1 B94CAA20D855ACB10AFEFBFB0D9523AC~-1~YAAQimrcF7+8KaSfAQAA+n4d1BANL34XfXq7qh/BUVNggrstndoa000ChVsBeS2qGpHF6eycA2xT/l1eZMlT...
+2026-08-05 18:48:59 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 18:49:19 [WARNING] Recovery attempt 3 failed: _abck score=-1 B94CAA20D855ACB10AFEFBFB0D9523AC~-1~YAAQimrcF0TBKaSfAQAA0bwd1BDeNGii2J/JO3XejCqWCqdcBKsWVXinluz8MS2iLrooYk3/AMJaR71DwurK...
+2026-08-05 18:49:19 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 18:49:23 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 18:50:02 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 18:50:22 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 18:50:42 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-05 18:51:02 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-05 18:51:02 [WARNING] BIN 2021536: AKAMAI_BLOCKED (retry 1/3)
+2026-08-05 18:51:02 [ERROR] blocked: SESSION_UNHEALTHY — reintenta tras cambiar VPN
+2026-08-05 18:51:32 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:52:04 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:52:35 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:53:06 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:53:37 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:54:08 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:54:39 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:55:10 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:55:41 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:56:12 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:56:43 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:57:14 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:57:45 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:58:16 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:58:47 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:59:18 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 18:59:49 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 19:00:20 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 19:00:51 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 21:24:03 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=48
+2026-08-05 21:24:05 [INFO] BIN 2021536 | X08004456-P1 START
+2026-08-05 21:24:49 [INFO] BIN 2021536: 0 docs ZD | hits=0 misses=4 | 44.7s
+2026-08-05 21:24:49 [INFO] BIN 3430292 | B01324244-I1 START
+2026-08-05 21:25:23 [WARNING] Block on zd1wd/portal_docs for guid=8b301670-84c: zd_err=SESSION_UNHEALTHY, po_err=SESSION_UNHEALTHY
+2026-08-05 21:25:23 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-05 21:25:23 [WARNING] Session recovery attempt 1/3 (wait=5s)
+2026-08-05 21:25:30 [WARNING] Recovery attempt 1 failed: _abck score=-1 B94CAA20D855ACB10AFEFBFB0D9523AC~-1~YAAQ06XIF7VRV6+fAQAAs9ys1BCHJBecHRBeLgWOz3jLMZkuVxZSp8Y4qbwx3Gv/dUkeQh8q6R7178C0VRnf...
+2026-08-05 21:25:30 [WARNING] Session recovery attempt 2/3 (wait=10s)
+2026-08-05 21:25:41 [WARNING] Recovery attempt 2 failed: _abck score=-1 B94CAA20D855ACB10AFEFBFB0D9523AC~-1~YAAQ06XIF1ZUV6+fAQAA3fSs1BCqXv93rtuyQuIV+eX0ndK7wPIYpuwG3UL5kITjdodTH9IXzuVEjq0Fm6X5...
+2026-08-05 21:25:41 [WARNING] Session recovery attempt 3/3 (wait=15s)
+2026-08-05 21:25:56 [WARNING] Recovery attempt 3 failed: _abck score=-1 B94CAA20D855ACB10AFEFBFB0D9523AC~-1~YAAQ06XIF7xXV6+fAQAAWR6t1BAVhwdUYeg2d/2xCOncSFZ98f49zg4N78mnSdAASP60IBWCPpAmYpiPgl4d...
+2026-08-05 21:25:56 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-05 21:26:00 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-05 21:26:39 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-05 21:26:59 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-05 21:27:19 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-05 21:27:39 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-05 21:27:39 [WARNING] BIN 3430292: AKAMAI_BLOCKED on docs (retry 1/3)
+2026-08-05 21:27:39 [ERROR] blocked: Blocked on docs — reintenta tras cambiar VPN
+2026-08-05 21:28:09 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:28:41 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:29:12 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:29:43 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:30:14 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:30:45 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:31:16 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:31:47 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:32:18 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:32:48 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:33:19 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:33:50 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:34:22 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:34:52 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:35:23 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:35:55 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:36:26 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:36:57 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-05 21:37:28 [INFO] START | cdp=True max_rows=100 pause=5.0-12.0s start_index=49
+2026-08-06 12:07:57 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=49
+2026-08-06 12:09:25 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=49
+2026-08-06 12:14:24 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=49
+2026-08-06 12:14:26 [INFO] BIN 3430292 | B01324244-I1 START
+2026-08-06 12:16:12 [INFO] BIN 3430292: 0 docs ZD | hits=1 misses=3 | 106.5s
+2026-08-06 12:16:12 [INFO] BIN 4015069 | Q00922636-P4 START
+2026-08-06 12:18:43 [INFO] BIN 4015069: 0 docs ZD | hits=1 misses=7 | 150.8s
+2026-08-06 12:18:43 [INFO] BIN 2076660 | X01181803-P1 START
+2026-08-06 12:19:07 [WARNING] SESSION_UNHEALTHY on search_bin BIN=2076660
+2026-08-06 12:19:07 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-06 12:19:07 [WARNING] Session recovery attempt 1/5 (wait=3s)
+2026-08-06 12:19:14 [WARNING] Recovery attempt 1 failed: _abck score=-1 D074459013240545A6087055F910496D~-1~YAAQ22I0F5xCmK6fAQAAtbXe1xAMnobZUPNQGa7usshEgUh2IIJztcR8Jtf9QIYcimkXby7k3tjNqkgDADZA...
+2026-08-06 12:19:14 [WARNING] Session recovery attempt 2/5 (wait=6s)
+2026-08-06 12:19:24 [WARNING] Recovery attempt 2 failed: _abck score=-1 D074459013240545A6087055F910496D~-1~YAAQ22I0F5xCmK6fAQAAtbXe1xAMnobZUPNQGa7usshEgUh2IIJztcR8Jtf9QIYcimkXby7k3tjNqkgDADZA...
+2026-08-06 12:19:24 [WARNING] Session recovery attempt 3/5 (wait=10s)
+2026-08-06 12:19:39 [WARNING] Recovery attempt 3 failed: _abck score=-1 D074459013240545A6087055F910496D~-1~YAAQ22I0F5xCmK6fAQAAtbXe1xAMnobZUPNQGa7usshEgUh2IIJztcR8Jtf9QIYcimkXby7k3tjNqkgDADZA...
+2026-08-06 12:19:39 [WARNING] Session recovery attempt 4/5 (wait=15s)
+2026-08-06 12:20:00 [WARNING] Recovery attempt 4 failed: _abck score=-1 D074459013240545A6087055F910496D~-1~YAAQ22I0F5xCmK6fAQAAtbXe1xAMnobZUPNQGa7usshEgUh2IIJztcR8Jtf9QIYcimkXby7k3tjNqkgDADZA...
+2026-08-06 12:20:00 [WARNING] Session recovery attempt 5/5 (wait=20s)
+2026-08-06 12:20:25 [WARNING] Recovery attempt 5 failed: _abck score=-1 D074459013240545A6087055F910496D~-1~YAAQ22I0F5xCmK6fAQAAtbXe1xAMnobZUPNQGa7usshEgUh2IIJztcR8Jtf9QIYcimkXby7k3tjNqkgDADZA...
+2026-08-06 12:20:25 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-06 12:20:29 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-06 12:21:09 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-06 12:21:29 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-06 12:21:49 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-06 12:22:09 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-06 12:22:09 [WARNING] BIN 2076660: AKAMAI_BLOCKED (retry 1/3)
+2026-08-06 12:22:09 [ERROR] blocked: SESSION_UNHEALTHY — reintenta tras cambiar VPN
+2026-08-06 12:28:12 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=51
+2026-08-06 12:34:14 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=51
+2026-08-06 12:40:17 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=51
+2026-08-06 12:46:24 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=51
+2026-08-06 12:46:26 [INFO] BIN 2076660 | X01181803-P1 START
+2026-08-06 12:46:56 [WARNING] SESSION_UNHEALTHY on search_bin BIN=2076660
+2026-08-06 12:46:56 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-06 12:46:56 [WARNING] Session recovery attempt 1/5 (wait=3s)
+2026-08-06 12:47:04 [WARNING] Recovery attempt 1 failed: _abck score=-1 36AD554B2159AB7F20CAD8D510297489~-1~YAAQhQnGFwjvtbOfAQAAYQ741xCK/c2LOsbM4fLWxiCsgJZumQvNMfk83S7ognGIGegwTqy5KQMOdGsmwzhk...
+2026-08-06 12:47:04 [WARNING] Session recovery attempt 2/5 (wait=6s)
+2026-08-06 12:47:15 [WARNING] Recovery attempt 2 failed: _abck score=-1 36AD554B2159AB7F20CAD8D510297489~-1~YAAQhQnGFwjvtbOfAQAAYQ741xCK/c2LOsbM4fLWxiCsgJZumQvNMfk83S7ognGIGegwTqy5KQMOdGsmwzhk...
+2026-08-06 12:47:15 [WARNING] Session recovery attempt 3/5 (wait=10s)
+2026-08-06 12:47:30 [WARNING] Recovery attempt 3 failed: _abck score=-1 36AD554B2159AB7F20CAD8D510297489~-1~YAAQhQnGFwjvtbOfAQAAYQ741xCK/c2LOsbM4fLWxiCsgJZumQvNMfk83S7ognGIGegwTqy5KQMOdGsmwzhk...
+2026-08-06 12:47:30 [WARNING] Session recovery attempt 4/5 (wait=15s)
+2026-08-06 12:47:49 [WARNING] Recovery attempt 4 failed: _abck score=-1 36AD554B2159AB7F20CAD8D510297489~-1~YAAQhQnGFwjvtbOfAQAAYQ741xCK/c2LOsbM4fLWxiCsgJZumQvNMfk83S7ognGIGegwTqy5KQMOdGsmwzhk...
+2026-08-06 12:47:49 [WARNING] Session recovery attempt 5/5 (wait=20s)
+2026-08-06 12:48:14 [WARNING] Recovery attempt 5 failed: _abck score=-1 36AD554B2159AB7F20CAD8D510297489~-1~YAAQhQnGFwjvtbOfAQAAYQ741xCK/c2LOsbM4fLWxiCsgJZumQvNMfk83S7ognGIGegwTqy5KQMOdGsmwzhk...
+2026-08-06 12:48:14 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-06 12:48:18 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-06 12:48:59 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-06 12:49:19 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-06 12:49:39 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-06 12:49:59 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-06 12:49:59 [WARNING] BIN 2076660: AKAMAI_BLOCKED (retry 2/3)
+2026-08-06 12:49:59 [ERROR] blocked: SESSION_UNHEALTHY — reintenta tras cambiar VPN
+2026-08-06 12:55:59 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=51
+2026-08-06 13:02:02 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=51
+2026-08-06 13:08:10 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=51
+2026-08-06 13:08:11 [INFO] BIN 2076660 | X01181803-P1 START
+2026-08-06 13:08:44 [WARNING] SESSION_UNHEALTHY on search_bin BIN=2076660
+2026-08-06 13:08:44 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-06 13:08:44 [WARNING] Session recovery attempt 1/5 (wait=3s)
+2026-08-06 13:08:52 [WARNING] Recovery attempt 1 failed: _abck score=-1 6482EF0B3E84278F9723C6448A4205DB~-1~YAAQt4nMF7gZWKyfAQAAK/sL2BAYKkbZIiavEnWXq9fMt7917TfTJ/s/trxu3bRv7Tv8FZRKmCpfdNjIpVXA...
+2026-08-06 13:08:52 [WARNING] Session recovery attempt 2/5 (wait=6s)
+2026-08-06 13:09:03 [WARNING] Recovery attempt 2 failed: _abck score=-1 6482EF0B3E84278F9723C6448A4205DB~-1~YAAQt4nMF7gZWKyfAQAAK/sL2BAYKkbZIiavEnWXq9fMt7917TfTJ/s/trxu3bRv7Tv8FZRKmCpfdNjIpVXA...
+2026-08-06 13:09:03 [WARNING] Session recovery attempt 3/5 (wait=10s)
+2026-08-06 13:09:17 [WARNING] Recovery attempt 3 failed: _abck score=-1 6482EF0B3E84278F9723C6448A4205DB~-1~YAAQt4nMF7gZWKyfAQAAK/sL2BAYKkbZIiavEnWXq9fMt7917TfTJ/s/trxu3bRv7Tv8FZRKmCpfdNjIpVXA...
+2026-08-06 13:09:17 [WARNING] Session recovery attempt 4/5 (wait=15s)
+2026-08-06 13:09:37 [WARNING] Recovery attempt 4 failed: _abck score=-1 6482EF0B3E84278F9723C6448A4205DB~-1~YAAQt4nMF7gZWKyfAQAAK/sL2BAYKkbZIiavEnWXq9fMt7917TfTJ/s/trxu3bRv7Tv8FZRKmCpfdNjIpVXA...
+2026-08-06 13:09:37 [WARNING] Session recovery attempt 5/5 (wait=20s)
+2026-08-06 13:10:03 [WARNING] Recovery attempt 5 failed: _abck score=-1 6482EF0B3E84278F9723C6448A4205DB~-1~YAAQt4nMF7gZWKyfAQAAK/sL2BAYKkbZIiavEnWXq9fMt7917TfTJ/s/trxu3bRv7Tv8FZRKmCpfdNjIpVXA...
+2026-08-06 13:10:03 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-06 13:10:07 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-06 13:10:46 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-06 13:11:06 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-06 13:11:26 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-06 13:11:46 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-06 13:11:46 [WARNING] BIN 2076660: BLOCKED_PERMANENT (retry 0/3)
+2026-08-06 13:11:46 [INFO] BIN 2048870 | X01113371-P1 START
+2026-08-06 13:12:23 [WARNING] SESSION_UNHEALTHY on search_bin BIN=2048870
+2026-08-06 13:12:23 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-06 13:12:23 [WARNING] Session recovery attempt 1/5 (wait=3s)
+2026-08-06 13:12:23 [WARNING] F5 keypress failed, falling back to page.reload()
+2026-08-06 13:12:23 [WARNING] Recovery F5 failed: Event loop is closed! Is Playwright already stopped?
+2026-08-06 13:12:26 [WARNING] Session recovery attempt 2/5 (wait=6s)
+2026-08-06 13:12:26 [WARNING] F5 keypress failed, falling back to page.reload()
+2026-08-06 13:12:26 [WARNING] Recovery F5 failed: Event loop is closed! Is Playwright already stopped?
+2026-08-06 13:12:32 [WARNING] Session recovery attempt 3/5 (wait=10s)
+2026-08-06 13:12:32 [WARNING] F5 keypress failed, falling back to page.reload()
+2026-08-06 13:12:32 [WARNING] Recovery F5 failed: Event loop is closed! Is Playwright already stopped?
+2026-08-06 13:12:42 [WARNING] Session recovery attempt 4/5 (wait=15s)
+2026-08-06 13:12:42 [WARNING] F5 keypress failed, falling back to page.reload()
+2026-08-06 13:12:42 [WARNING] Recovery F5 failed: Event loop is closed! Is Playwright already stopped?
+2026-08-06 13:12:57 [WARNING] Session recovery attempt 5/5 (wait=20s)
+2026-08-06 13:12:57 [WARNING] F5 keypress failed, falling back to page.reload()
+2026-08-06 13:12:57 [WARNING] Recovery F5 failed: Event loop is closed! Is Playwright already stopped?
+2026-08-06 13:13:17 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-06 13:13:21 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-06 13:14:01 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-06 13:14:21 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-06 13:14:41 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-06 13:15:01 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-06 13:15:01 [WARNING] BIN 2048870: AKAMAI_BLOCKED (retry 1/3)
+2026-08-06 13:15:01 [ERROR] blocked: SESSION_UNHEALTHY — reintenta tras cambiar VPN
+2026-08-06 13:21:01 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=52
+2026-08-06 13:27:09 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=52
+2026-08-06 13:33:14 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=52
+2026-08-06 13:33:15 [INFO] BIN 2048870 | X01113371-P1 START
+2026-08-06 13:33:53 [WARNING] SESSION_UNHEALTHY on search_bin BIN=2048870
+2026-08-06 13:33:53 [WARNING] Full recovery: Phase 1 (reloads)
+2026-08-06 13:33:53 [WARNING] Session recovery attempt 1/5 (wait=3s)
+2026-08-06 13:34:00 [WARNING] Recovery attempt 1 failed: _abck score=-1 8D26266E7D0CEA5ABC54A6790ACF9C7E~-1~YAAQD1PRF5czdbGfAQAAqO4i2BDvbbL8WsC5sMNrHIga4iiCWHZJZ5qbk03Ybm0IveamXf7Il7at/0KaPxmi...
+2026-08-06 13:34:00 [WARNING] Session recovery attempt 2/5 (wait=6s)
+2026-08-06 13:34:10 [WARNING] Recovery attempt 2 failed: _abck score=-1 8D26266E7D0CEA5ABC54A6790ACF9C7E~-1~YAAQD1PRF5czdbGfAQAAqO4i2BDvbbL8WsC5sMNrHIga4iiCWHZJZ5qbk03Ybm0IveamXf7Il7at/0KaPxmi...
+2026-08-06 13:34:10 [WARNING] Session recovery attempt 3/5 (wait=10s)
+2026-08-06 13:34:25 [WARNING] Recovery attempt 3 failed: _abck score=-1 8D26266E7D0CEA5ABC54A6790ACF9C7E~-1~YAAQD1PRF5czdbGfAQAAqO4i2BDvbbL8WsC5sMNrHIga4iiCWHZJZ5qbk03Ybm0IveamXf7Il7at/0KaPxmi...
+2026-08-06 13:34:25 [WARNING] Session recovery attempt 4/5 (wait=15s)
+2026-08-06 13:34:45 [WARNING] Recovery attempt 4 failed: _abck score=-1 8D26266E7D0CEA5ABC54A6790ACF9C7E~-1~YAAQD1PRF5czdbGfAQAAqO4i2BDvbbL8WsC5sMNrHIga4iiCWHZJZ5qbk03Ybm0IveamXf7Il7at/0KaPxmi...
+2026-08-06 13:34:45 [WARNING] Session recovery attempt 5/5 (wait=20s)
+2026-08-06 13:35:09 [WARNING] Recovery attempt 5 failed: _abck score=-1 8D26266E7D0CEA5ABC54A6790ACF9C7E~-1~YAAQD1PRF5czdbGfAQAAqO4i2BDvbbL8WsC5sMNrHIga4iiCWHZJZ5qbk03Ybm0IveamXf7Il7at/0KaPxmi...
+2026-08-06 13:35:09 [WARNING] Phase 2: restarting Chrome via CDP
+2026-08-06 13:35:13 [INFO] Launching Chrome CDP: /usr/bin/google-chrome-stable port=9222 profile=/tmp/chrome_cdp_profile
+2026-08-06 13:35:56 [WARNING] Phase 2 _abck check 1/3 still blocked, waiting 20s
+2026-08-06 13:36:16 [WARNING] Phase 2 _abck check 2/3 still blocked, waiting 20s
+2026-08-06 13:36:36 [WARNING] Phase 2 _abck check 3/3 still blocked, waiting 20s
+2026-08-06 13:36:56 [ERROR] Phase 2 failed: _abck still blocked after warm-up + retries
+2026-08-06 13:36:56 [WARNING] BIN 2048870: AKAMAI_BLOCKED (retry 2/3)
+2026-08-06 13:36:56 [ERROR] blocked: SESSION_UNHEALTHY — reintenta tras cambiar VPN
+2026-08-06 13:42:57 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=52
+2026-08-06 13:49:05 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=52
+2026-08-06 13:55:09 [INFO] START | cdp=True max_rows=5 pause=20.0-45.0s start_index=52

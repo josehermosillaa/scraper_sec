@@ -7,7 +7,8 @@ import time
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SCRAPER = os.path.join(HERE, "conservative_scraper.py")
+SCRAPER_CONSERVATIVE = os.path.join(HERE, "conservative_scraper.py")
+SCRAPER_HYBRID = os.path.join(HERE, "patchright_hybrid.py")
 DEFAULT_PROFILE = os.path.join(tempfile.gettempdir(), "chrome_cdp_profile")
 
 try:
@@ -20,16 +21,22 @@ except (ImportError, FileNotFoundError):
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Ejecuta conservative_scraper.py en bucle automatico"
+        description="Ejecuta scraper en bucle automatico"
     )
+    parser.add_argument("--scraper", choices=["conservative", "hybrid"], default="conservative",
+                        help="Scraper a ejecutar (default: conservative)")
     parser.add_argument("--interval", type=int, default=300,
                         help="Segundos entre ejecuciones (default: 300 = 5 min)")
     parser.add_argument("--max-failures", type=int, default=20,
                         help="Fallos consecutivos antes de detener el bucle (default: 20)")
     parser.add_argument("--vpn", action="store_true",
-                        help="Rotar ProtonVPN automaticamente si la pagina muestra Access Denied")
+                        help="Rotar ProtonVPN automaticamente ante bloqueos")
+    parser.add_argument("--vpn-rotate-every", type=int, default=0, metavar="N",
+                        help="Rotar VPN + limpiar cookies cada N iteraciones (0=off)")
+    parser.add_argument("--vpn-rotate-on-failures", type=int, default=5, metavar="N",
+                        help="Rotar VPN + limpiar cookies tras N fallos consecutivos (default: 5)")
     parser.add_argument("--profile", default=None, metavar="DIR",
-                        help="user-data-dir de Chrome para CDP (default: TEMP/chrome_cdp_profile)")
+                        help="user-data-dir de Chrome para CDP (solo modo conservative, default: TEMP/chrome_cdp_profile)")
     args, scraper_args = parser.parse_known_args()
     return args, scraper_args
 
@@ -137,13 +144,44 @@ def ensure_chrome_cdp(port, profile):
         return False
 
 
+def clear_akamai_cookies(port):
+    akamai_names = {"_abck", "bm_sz", "ak_bmsc", "bm_mi", "bm_sv"}
+    try:
+        from patchright.sync_api import sync_playwright
+        pw = sync_playwright().start()
+        browser = pw.chromium.connect_over_cdp(f"http://127.0.0.1:{port}")
+        ctx = browser.contexts[0]
+        cleared = []
+        for c in ctx.cookies():
+            name = c.get("name", "")
+            if name in akamai_names:
+                ctx.clear_cookies(name=name)
+                cleared.append(name)
+        pw.stop()
+        if cleared:
+            print(f"[clear] Cookies de Akamai eliminadas: {', '.join(cleared)}")
+        else:
+            print("[clear] No se encontraron cookies de Akamai")
+        return True
+    except Exception as e:
+        print(f"[clear] Error limpiando cookies: {e}")
+        return False
+
+
 def main():
     args, scraper_args = parse_args()
 
+    is_hybrid = args.scraper == "hybrid"
+    scraper_path = SCRAPER_HYBRID if is_hybrid else SCRAPER_CONSERVATIVE
+    scraper_name = "patchright_hybrid.py" if is_hybrid else "conservative_scraper.py"
+
     if not scraper_args:
-        print("[loop] No hay argumentos para conservative_scraper.py.")
+        print(f"[loop] No hay argumentos para {scraper_name}.")
         print("[loop] Pasa los mismos que usarias normalmente:")
-        print("[loop]   python run_loop.py --cdp-port 9222 --max-rows 5")
+        if is_hybrid:
+            print("[loop]   python run_loop.py --scraper hybrid --max-rows 100")
+        else:
+            print("[loop]   python run_loop.py --cdp-port 9222 --max-rows 5")
         sys.exit(1)
 
     vpn = None
@@ -152,17 +190,22 @@ def main():
             print("[!] --vpn requiere protonvpn CLI instalado. Instalalo o quita el flag.")
             sys.exit(1)
         vpn = ProtonVPN()
-        print("[VPN] ProtonVPN detectado. Rotacion automatica ante Access Denied.")
+        print("[VPN] ProtonVPN detectado. Rotacion automatica ante bloqueos.")
 
     profile = args.profile or DEFAULT_PROFILE
 
     print("=" * 60)
-    print("run_loop.py — ejecucion automatica de conservative_scraper.py")
-    print(f"Intervalo:     {args.interval}s ({args.interval // 60} min)")
-    print(f"Max fallos:    {args.max_failures}")
-    print(f"VPN auto:      {'SI' if vpn else 'NO'}")
-    print(f"Perfil Chrome: {profile}")
-    print(f"Comando:       python conservative_scraper.py {' '.join(scraper_args)}")
+    print(f"run_loop.py — ejecucion automatica de {scraper_name}")
+    print(f"Scraper:           {args.scraper}")
+    print(f"Intervalo:          {args.interval}s ({args.interval // 60} min)")
+    print(f"Max fallos:         {args.max_failures}")
+    print(f"VPN auto:           {'SI' if vpn else 'NO'}")
+    if vpn:
+        print(f"VPN rotate every:   {f'cada {args.vpn_rotate_every} iter' if args.vpn_rotate_every else 'solo reactivo'}")
+        print(f"VPN rotate on fail: {args.vpn_rotate_on_failures} fallos consecutivos")
+    if not is_hybrid:
+        print(f"Perfil Chrome:      {profile}")
+    print(f"Comando:            python {scraper_name} {' '.join(scraper_args)}")
     print("Ctrl+C para detener el bucle")
     print("=" * 60)
 
@@ -172,43 +215,72 @@ def main():
     while True:
         iteration += 1
         print(f"\n{'=' * 60}")
-        print(f"[loop #{iteration}] Ejecutando conservative_scraper.py...")
+        print(f"[loop #{iteration}] Ejecutando {scraper_name}...")
         print(f"          {time.strftime('%Y-%m-%d %H:%M:%S')}  |  fallos consecutivos: {consecutive_failures}/{args.max_failures}")
         print(f"{'=' * 60}")
 
         result = subprocess.run(
-            [sys.executable, SCRAPER] + scraper_args,
+            [sys.executable, scraper_path] + scraper_args,
             cwd=HERE,
         )
 
         code = result.returncode
         msg = exit_message(code)
 
-        if code == 2 and vpn:
+        should_rotate_vpn = False
+
+        if code in (2, 3) and vpn:
             consecutive_failures += 1
-            print(f"\n[loop #{iteration}] {msg}")
-            print("                Rotando ProtonVPN a siguiente ciudad US...")
-            try:
-                vpn.rotate()
-            except Exception as e:
-                print(f"                Error al rotar VPN: {e}")
-            time.sleep(15)
-            print("                Reiniciando Chrome con nueva IP...")
-            if ensure_chrome_cdp(9222, profile):
-                print("                Chrome CDP listo. Reintentando scraper...")
-                consecutive_failures = min(consecutive_failures, consecutive_failures - 1)
-            else:
-                print("                No se pudo restablecer Chrome CDP. Proxima iteracion...")
+            should_rotate_vpn = True
         elif code == 0:
             consecutive_failures = 0
             print(f"\n[loop #{iteration}] OK. Fallos reseteados a 0.")
-        elif code == 2:
+        elif code == 2 and not vpn:
             consecutive_failures += 1
             print(f"\n[loop #{iteration}] {msg} (fallos={consecutive_failures}/{args.max_failures})")
             print("                Si tienes ProtonVPN, usa --vpn para rotacion automatica.")
         else:
             consecutive_failures += 1
             print(f"\n[loop #{iteration}] {msg} (fallos={consecutive_failures}/{args.max_failures})")
+
+        if vpn and args.vpn_rotate_every > 0 and iteration % args.vpn_rotate_every == 0:
+            print(f"\n[loop #{iteration}] Rotacion VPN proactiva (cada {args.vpn_rotate_every} iteraciones)...")
+            should_rotate_vpn = True
+
+        if vpn and args.vpn_rotate_on_failures > 0 and consecutive_failures >= args.vpn_rotate_on_failures:
+            print(f"\n[loop #{iteration}] Rotacion VPN por fallos ({consecutive_failures}/{args.vpn_rotate_on_failures})...")
+            should_rotate_vpn = True
+
+        if should_rotate_vpn and vpn:
+            print(f"                Rotando ProtonVPN a siguiente ciudad US...")
+            try:
+                vpn.rotate()
+            except Exception as e:
+                print(f"                Error al rotar VPN: {e}")
+            time.sleep(15)
+            if is_hybrid:
+                print("                [hybrid] VPN rotada. Reiniciando Chrome con nueva IP...")
+                _kill_chrome()
+                time.sleep(3)
+                chrome_path = _find_chrome()
+                subprocess.Popen(
+                    [chrome_path, "--remote-debugging-port=9222", f"--user-data-dir={profile}"],
+                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                )
+                if _wait_for_port(9222, timeout=15):
+                    clear_akamai_cookies(9222)
+                    print("                [hybrid] Chrome CDP listo. Reintentando scraper...")
+                else:
+                    print("                [hybrid] No se pudo lanzar Chrome CDP.")
+                consecutive_failures = 0
+            else:
+                print("                Reiniciando Chrome con nueva IP...")
+                if ensure_chrome_cdp(9222, profile):
+                    clear_akamai_cookies(9222)
+                    print("                Chrome CDP listo. Reintentando scraper...")
+                    consecutive_failures = 0
+                else:
+                    print("                No se pudo restablecer Chrome CDP. Proxima iteracion...")
 
         if consecutive_failures >= args.max_failures:
             print(f"\n[loop] {args.max_failures} fallos consecutivos. Deteniendo bucle.")

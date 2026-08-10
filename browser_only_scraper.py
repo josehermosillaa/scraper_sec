@@ -289,9 +289,33 @@ def warm_up(page, duration_s=WARM_UP_S, quiet=False):
             )
         except Exception:
             pass
+        try:
+            w = page.evaluate("window.innerWidth")
+            h = page.evaluate("window.innerHeight")
+            page.mouse.move(random.randint(100, w - 100), random.randint(100, h - 100))
+        except Exception:
+            pass
         time.sleep(random.uniform(1.5, 3.5))
     if not quiet:
         print("  [warm-up] listo.")
+
+
+def human_f5_reload(page, wait_until="domcontentloaded", timeout=60000):
+    try:
+        page.evaluate("document.body.focus()")
+    except Exception:
+        pass
+    try:
+        page.keyboard.press("F5")
+    except Exception:
+        log.warning("F5 keypress failed, falling back to page.reload()")
+        page.reload(wait_until=wait_until, timeout=timeout)
+        return
+    time.sleep(3)
+    try:
+        page.wait_for_load_state(wait_until, timeout=timeout)
+    except Exception:
+        pass
 
 
 # ═══════════════════════════════════════════════════════
@@ -559,10 +583,10 @@ def api_get_download_url(page, doc_url, borough):
 def recover_from_akamai(context, page, pw, vpn, bad_cities):
     log.warning(f"recover_from_akamai START (bad_cities={bad_cities[0]})")
     for attempt in range(AKAMAI_RELOAD_TRIES):
-        print(f"  [recover] Reload {attempt + 1}/{AKAMAI_RELOAD_TRIES}")
-        log.info(f"Recovery reload attempt {attempt + 1}/{AKAMAI_RELOAD_TRIES}")
+        print(f"  [recover] F5 reload {attempt + 1}/{AKAMAI_RELOAD_TRIES}")
+        log.info(f"Recovery F5 attempt {attempt + 1}/{AKAMAI_RELOAD_TRIES}")
         try:
-            page.goto(DOBNOW_URL, wait_until="domcontentloaded", timeout=60000)
+            human_f5_reload(page)
         except Exception:
             pass
         time.sleep(4)
@@ -582,7 +606,7 @@ def recover_from_akamai(context, page, pw, vpn, bad_cities):
         print("  [recover] Sin VPN. Pausa 60s y ultimo intento...")
         time.sleep(60)
         try:
-            page.goto(DOBNOW_URL, wait_until="domcontentloaded", timeout=60000)
+            human_f5_reload(page)
         except Exception:
             return None, None
         time.sleep(4)

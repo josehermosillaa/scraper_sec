@@ -38,6 +38,7 @@ log = logging.getLogger("conservative")
 
 KEYS = {"ZD1", "ZD2", "ZD1A", "ZRD"}
 KEYS_LOWER = {k.lower() for k in KEYS}
+REFRESH_EVERY_N_BINS = 5
 
 BOROUGH_MAP = {
     "Manhattan": "MANHATTAN",
@@ -296,17 +297,27 @@ def detach_browser(pw):
         pass
 
 
-def try_recover_session(page, context, max_attempts=3):
+def try_recover_session(page, context, max_attempts=5):
+    waits = [3, 6, 10, 15, 20]
     for attempt in range(max_attempts):
-        wait = 5 + attempt * 5
-        print(f"  [recover] Recargando pagina (intento {attempt + 1}/{max_attempts}, espera {wait}s)...")
+        wait = waits[attempt]
+        print(f"  [recover] F5 reload (intento {attempt + 1}/{max_attempts}, espera {wait}s)...")
         log.warning(f"Session recovery attempt {attempt + 1}/{max_attempts} (wait={wait}s)")
         try:
-            page.goto(DOBNOW_URL, wait_until="domcontentloaded", timeout=60000)
+            human_f5_reload(page)
         except Exception as e:
-            log.warning(f"Recovery reload failed: {e}")
+            log.warning(f"Recovery F5 failed: {e}")
             time.sleep(wait)
             continue
+        try:
+            w = page.evaluate("window.innerWidth")
+            h = page.evaluate("window.innerHeight")
+            for _ in range(random.randint(2, 4)):
+                page.mouse.move(random.randint(100, w - 100), random.randint(100, h - 100))
+                time.sleep(random.uniform(0.3, 0.8))
+            page.evaluate(f"window.scrollBy(0, {random.randint(80, 300)})")
+        except Exception:
+            pass
         time.sleep(wait)
         abck_state, abck_msg = abck_status(context)
         if abck_state != "blocked":
@@ -525,8 +536,32 @@ def warm_up(page, duration_s=20):
             page.evaluate(f"window.scrollBy(0, {random.randint(50, 350)})", isolated_context=False)
         except Exception:
             pass
+        try:
+            w = page.evaluate("window.innerWidth")
+            h = page.evaluate("window.innerHeight")
+            page.mouse.move(random.randint(100, w - 100), random.randint(100, h - 100))
+        except Exception:
+            pass
         time.sleep(random.uniform(1.5, 3.5))
     print("[*] Warm-up completado.")
+
+
+def human_f5_reload(page, wait_until="domcontentloaded", timeout=60000):
+    try:
+        page.evaluate("document.body.focus()")
+    except Exception:
+        pass
+    try:
+        page.keyboard.press("F5")
+    except Exception:
+        log.warning("F5 keypress failed, falling back to page.reload()")
+        page.reload(wait_until=wait_until, timeout=timeout)
+        return
+    time.sleep(3)
+    try:
+        page.wait_for_load_state(wait_until, timeout=timeout)
+    except Exception:
+        pass
 
 
 def print_startup_diagnostics(page, context):
@@ -576,6 +611,12 @@ def polite_pause(min_s, max_s):
 def small_user_activity(page):
     try:
         page.evaluate(f"window.scrollBy(0, {random.randint(80, 300)})", isolated_context=False)
+    except Exception:
+        pass
+    try:
+        w = page.evaluate("window.innerWidth")
+        h = page.evaluate("window.innerHeight")
+        page.mouse.move(random.randint(100, w - 100), random.randint(100, h - 100))
     except Exception:
         pass
 
@@ -910,6 +951,7 @@ def main():
         pw, context, page = launch_browser(headless=args.headless, profile_dir=profile_dir)
     processed = start_index
     total_zd = 0
+    bins_since_refresh = 0
     stop_reason = "completed"
 
     try:
@@ -1040,10 +1082,46 @@ def main():
                 total_zd += count
                 processed = idx + 1
                 retry_count = 0
+                bins_since_refresh += 1
                 save_checkpoint(processed, retry_count=0)
                 f_out.flush()
                 print(f"  ZD encontrados: {count} | cache hits={cache.hits} misses={cache.misses}")
                 log.info(f"BIN {bin_num}: {count} docs ZD | hits={cache.hits} misses={cache.misses} | {time.time() - t0:.1f}s")
+
+                if bins_since_refresh >= REFRESH_EVERY_N_BINS:
+                    print(f"  [refresh] Proactive F5 reload after {bins_since_refresh} BINs...")
+                    log.info(f"Proactive F5 refresh after {bins_since_refresh} BINs")
+                    human_f5_reload(page)
+                    time.sleep(3)
+                    abck_state, abck_msg = abck_status(context)
+                    if abck_state == "blocked":
+                        log.warning(f"Proactive refresh: _abck blocked, attempting recovery")
+                        recovered = try_full_recovery(page, context, pw, args.cdp_port, cdp_profile)
+                        if recovered[0]:
+                            pw, context, page = recovered
+                        else:
+                            raise StopForBlock("Proactive refresh failed: session poisoned")
+                    if not wait_angular(page, 30):
+                        log.warning("Angular not ready after proactive refresh")
+                    warm_up(page, 15)
+                    bins_since_refresh = 0
+
+                if random.random() < 0.25:
+                    long_pause = random.uniform(30, 90)
+                    print(f"  [pause] Simulando lectura humana ({long_pause:.0f}s)...")
+                    t_pause = time.time()
+                    while time.time() - t_pause < long_pause:
+                        try:
+                            page.evaluate(f"window.scrollBy(0, {random.randint(50, 200)})", isolated_context=False)
+                        except Exception:
+                            pass
+                        try:
+                            w = page.evaluate("window.innerWidth")
+                            h = page.evaluate("window.innerHeight")
+                            page.mouse.move(random.randint(100, w - 100), random.randint(100, h - 100))
+                        except Exception:
+                            pass
+                        time.sleep(random.uniform(3, 8))
 
     except StopForBlock as e:
         stop_reason = f"blocked: {e}"
