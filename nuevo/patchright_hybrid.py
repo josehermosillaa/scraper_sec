@@ -1117,8 +1117,6 @@ def main():
     ip = detect_ip(page)
     print(f"[*] IP publica: {ip}")
 
-    fresh_session_warmup(page)
-
     abck_state, abck_msg = abck_status(context)
     prefix = "[!]" if abck_state == "blocked" else "[*]"
     print(f"{prefix} _abck: {abck_msg}")
@@ -1132,7 +1130,8 @@ def main():
         sys.exit(2)
 
     if abck_state == "blocked":
-        print("[!] _abck bloqueado. Haciendo nuke completo del navegador...")
+        print("[!] _abck bloqueado. Haciendo warmup humanizado + nuke completo...")
+        fresh_session_warmup(page)
         nuke_browser_state(page, context)
         human_f5_reload(page, cdp_mode)
         time.sleep(5)
@@ -1141,14 +1140,16 @@ def main():
             wait_angular(page, 60)
         abck_state, abck_msg = abck_status(context)
         prefix = "[!]" if abck_state == "blocked" else "[*]"
-        print(f"{prefix} _abck post-nuke: {abck_msg}")
+        print(f"{prefix} _abck post-recovery: {abck_msg}")
         if abck_state == "blocked":
-            print("[!] Sesion sigue marcada tras nuke completo del storage.")
+            print("[!] Sesion sigue marcada tras warmup + nuke.")
             if cdp_mode:
                 detach_browser(pw)
             else:
                 close_browser(pw, context)
             sys.exit(3)
+    else:
+        print("[*] _abck saludable, sin warmup necesario.")
 
     if not cdp_mode or not wait_angular(page, 10):
         human_interact(page)
