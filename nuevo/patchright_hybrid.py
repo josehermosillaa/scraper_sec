@@ -70,6 +70,14 @@ HEADERS_CHROME = {
     "sec-fetch-dest": "empty",
 }
 
+_PLATFORM_SPOOF = "Win32" if sys.platform == "win32" else "Linux x86_64"
+_WEBGL_VENDOR = "Google Inc. (NVIDIA)" if sys.platform == "win32" else "Intel Inc."
+_WEBGL_RENDERER = (
+    "ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 (0x00002504) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+    if sys.platform == "win32"
+    else "Intel Iris OpenGL Engine"
+)
+
 ANTI_FINGERPRINT_JS = """
 try { Object.defineProperty(navigator, 'webdriver', {get: () => undefined}); } catch(e) {}
 try { delete navigator.__proto__.webdriver; } catch(e) {}
@@ -77,7 +85,7 @@ window.chrome = { runtime: {} };
 
 try { Object.defineProperty(navigator, 'hardwareConcurrency', {get: () => 8}); } catch(e) {}
 try { Object.defineProperty(navigator, 'deviceMemory', {get: () => 8}); } catch(e) {}
-try { Object.defineProperty(navigator, 'platform', {get: () => 'Linux x86_64'}); } catch(e) {}
+try { Object.defineProperty(navigator, 'platform', {get: () => '__PLATFORM__'}); } catch(e) {}
 
 const TzDate = Date;
 const origToString = TzDate.prototype.toString;
@@ -137,8 +145,8 @@ try {
 (function() {
     const handler = {
         apply(target, self, args) {
-            if (args[0] === 37445) return 'Intel Inc.';
-            if (args[0] === 37446) return 'Intel Iris OpenGL Engine';
+            if (args[0] === 37445) return '__WEBGL_VENDOR__';
+            if (args[0] === 37446) return '__WEBGL_RENDERER__';
             return target.apply(self, args);
         }
     };
@@ -172,6 +180,10 @@ try {
     }
 } catch(e) {}
 """
+
+ANTI_FINGERPRINT_JS = ANTI_FINGERPRINT_JS.replace("__PLATFORM__", _PLATFORM_SPOOF)
+ANTI_FINGERPRINT_JS = ANTI_FINGERPRINT_JS.replace("__WEBGL_VENDOR__", _WEBGL_VENDOR)
+ANTI_FINGERPRINT_JS = ANTI_FINGERPRINT_JS.replace("__WEBGL_RENDERER__", _WEBGL_RENDERER)
 
 
 class StopForBlock(RuntimeError):
