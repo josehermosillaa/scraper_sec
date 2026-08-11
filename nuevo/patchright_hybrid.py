@@ -430,12 +430,12 @@ def reload_and_warmup(page, context, cdp_mode=False):
     time.sleep(4)
     if page_is_blocked(page):
         return False, "blocked_after_reload"
+    human_interact(page)
     if not wait_angular(page, timeout_s=30):
         return False, "angular_not_ready"
     abck_s, abck_m = abck_status(context)
     if abck_s == "blocked":
         return False, f"_abck_blocked: {abck_m}"
-    human_interact(page)
     return True, "ok"
 
 
@@ -451,6 +451,19 @@ def browser_call_with_retry(page, context, cdp_mode, call_fn, *args):
                 print(f"    [retry] Recarga fallo: {reason}")
                 return "FETCH_FAILED"
     return "FETCH_FAILED"
+
+
+def search_bin_with_retry(page, context, cdp_mode, bin_num, street):
+    for attempt in range(1, MAX_FETCH_RETRIES + 1):
+        all_jobs, err = browser_search_bin(page, bin_num, street)
+        if err != "FETCH_FAILED":
+            return all_jobs, err
+        if attempt < MAX_FETCH_RETRIES:
+            print(f"    [retry search {attempt}/{MAX_FETCH_RETRIES}] Fetch failed, recargando pagina...")
+            ok, _ = reload_and_warmup(page, context, cdp_mode)
+            if not ok:
+                return None, "FETCH_FAILED"
+    return None, "FETCH_FAILED"
 
 
 def nuke_browser_state(page, context):
@@ -569,6 +582,11 @@ def detect_ip(page):
         except Exception:
             pass
         time.sleep(2)
+    try:
+        page.goto(DOBNOW_URL, wait_until="domcontentloaded", timeout=60000)
+        time.sleep(2)
+    except Exception:
+        pass
     return "unknown"
 
 
@@ -742,6 +760,16 @@ def update_http_session(s, interceptor_headers, cookies):
         )
 
 
+def sync_cookies(http_s, context):
+    for cookie in context.cookies():
+        http_s.cookies.set(
+            cookie.get("name") or "",
+            cookie.get("value") or "",
+            domain=cookie.get("domain", "").lstrip(".") or "",
+            path=cookie.get("path") or "/",
+        )
+
+
 def guid_refresh_auth(http_s, page, context):
     h, c = extract_auth(page, context)
     if h:
@@ -797,6 +825,16 @@ def api_search_bin(http_session, bin_num, street=""):
 
 def browser_search_bin(page, bin_num, street=""):
     try:
+        ok = page.evaluate("""
+            typeof angular !== 'undefined' &&
+            angular.element(document.body).injector() !== undefined
+        """, isolated_context=False)
+        if not ok:
+            return "FETCH_FAILED", "FETCH_FAILED"
+    except Exception:
+        return "FETCH_FAILED", "FETCH_FAILED"
+
+    try:
         result = page.evaluate("""
             async ({bin_num, street}) => {
                 var injector = angular.element(document.body).injector();
@@ -810,14 +848,17 @@ def browser_search_bin(page, bin_num, street=""):
                     headers:{"Content-Type":"application/json",
                              "X-Requested-With":"XMLHttpRequest",
                              ...req.headers},
-                    body: JSON.stringify({"BIN": bin_num, "SearchBy":"2", "StreetName": street})
+                    body: JSON.stringify({"BIN": bin_num, "SearchBy": "2", "StreetName": street})
                 });
                 var text = await resp.text();
                 return {status: resp.status, body: text};
             }
         """, {"bin_num": bin_num, "street": street}, isolated_context=False)
     except Exception as e:
-        return None, str(e)
+        msg = str(e)
+        if "Failed to fetch" in msg or "angular is not defined" in msg:
+            return "FETCH_FAILED", "FETCH_FAILED"
+        return None, msg
 
     status = result.get("status", 0)
     body = result.get("body", "")
@@ -1163,7 +1204,7 @@ def main():
     else:
         print("[*] _abck saludable, sin warmup necesario.")
 
-    if not cdp_mode or not wait_angular(page, 10):
+    if not cdp_mode or not wait_angular(page, 30):
         human_interact(page)
         print("[*] Esperando Angular (haz login si es necesario)...")
         if not wait_angular(page, 120):
@@ -1261,28 +1302,21 @@ def main():
                 search_key = json.dumps(["POST", f"{PUBLIC_BASE}/getPublicPortalBuildDisplay",
                                          {"BIN": bin_num, "SearchBy": "2", "StreetName": street}], sort_keys=True)
                 cached_search = cache.get(search_key)
-                if cached_search is not None:
+                if cached_search is not None and cached_search.get("err") is None:
                     all_jobs = cached_search["all_jobs"]
-                    err = cached_search["err"]
+                    err = None
                 else:
                     polite_pause(args.pause_min, args.pause_max)
-                    human_interact(page)
-                    all_jobs, err = browser_search_bin(page, bin_num, street)
-                    cache.set(search_key, {"all_jobs": all_jobs, "err": err})
-                    cache.save()
+                    all_jobs, err = api_search_bin(http_s, bin_num, street)
+                    if err is None:
+                        cache.set(search_key, {"all_jobs": all_jobs, "err": err})
+                        cache.save()
 
                 if err == "AKAMAI_BLOCKED":
-                    cache.set(search_key, None)
-                    cache.save()
-                    recovered = recover_from_akamai(page, context, pw, http_s, vpn, bad_cities, cdp_mode)
-                    if recovered[0]:
-                        page, context = recovered
-                        auth_counter = 0
-                        page_refresh_counter = 0
-                        time.sleep(2)
-                        polite_pause(args.pause_min, args.pause_max)
-                        human_interact(page)
-                        all_jobs, err = browser_search_bin(page, bin_num, street)
+                    sync_cookies(http_s, context)
+                    polite_pause(2, 4)
+                    all_jobs, err = api_search_bin(http_s, bin_num, street)
+                    if err is None:
                         cache.set(search_key, {"all_jobs": all_jobs, "err": err})
                         cache.save()
 
@@ -1296,11 +1330,12 @@ def main():
                         page_refresh_counter = 0
                         time.sleep(2)
                         polite_pause(args.pause_min, args.pause_max)
-                        human_interact(page)
-                        all_jobs, err = browser_search_bin(page, bin_num, street)
-                        cache.set(search_key, {"all_jobs": all_jobs, "err": err})
-                        cache.save()
+                        all_jobs, err = api_search_bin(http_s, bin_num, street)
+                        if err is None:
+                            cache.set(search_key, {"all_jobs": all_jobs, "err": err})
+                            cache.save()
 
+                err_label = err if err else "API_ERROR"
                 if err or all_jobs is None:
                     retry_count += 1
                     if retry_count < 3:
@@ -1308,13 +1343,13 @@ def main():
                         for jf in job_filings:
                             writer.writerow(fallback_row(bin_num, jf, "AKAMAI_BLOCKED", row))
                         f_out.flush()
-                        raise StopForBlock("AKAMAI_BLOCKED on search_bin — reintenta tras cambiar VPN")
+                        raise StopForBlock(f"{err_label} on search_bin — reintenta tras cambiar VPN")
                     else:
                         for jf in job_filings:
                             writer.writerow(fallback_row(bin_num, jf, "BLOCKED_PERMANENT", row))
                         f_out.flush()
-                        write_failed_bin(row, "search_bin_blocked")
-                        raise StopForBlock("AKAMAI_BLOCKED on search_bin (retries exhausted) — reintenta tras cambiar VPN")
+                        write_failed_bin(row, f"search_bin_{err_label.lower()}")
+                        raise StopForBlock(f"{err_label} on search_bin (retries exhausted) — reintenta tras cambiar VPN")
 
                 jobs_by_filing = {}
                 for j in all_jobs:
